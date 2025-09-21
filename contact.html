@@ -495,6 +495,9 @@
     <!--==================================================-->
     <!-- Start mediket Appoinment Section  -->
     <!--==================================================-->
+     <!--==================================================-->
+    <!-- Start mediket Appoinment Section  -->
+    <!--==================================================-->
     <div class="appoinment-section style-2">
       <div class="container-fluid">
         <div class="row align-items-stretch">
@@ -523,6 +526,7 @@
                 method="POST"
                 id="dreamit-form"
               >
+                <div id="form-messages" style="margin-top: 20px; padding: 15px; border-radius: 8px; display: none;"></div>
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
                     <div class="form-box">
@@ -601,6 +605,7 @@
         </div>
       </div>
     </div>
+   
     <!--==================================================-->
     <!-- End mediket Appoinment Section  -->
     <!--==================================================-->
@@ -919,458 +924,100 @@
     <!-- End WhatsApp Chat Interface -->
     <!--==================================================-->
 
-    <script>
-        // WhatsApp Chat Interface Functions
-        let selectedOption = '';
+    <!-- ================================================== -->
+<!-- 1. ADD THE EMAILJS SDK -->
+<!-- ================================================== -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
 
-        function toggleChatInterface(isManual = false) {
-            const chatInterface = document.getElementById('whatsapp-interface');
-            const overlay = document.getElementById('chat-overlay');
-            
-            if (chatInterface.classList.contains('active')) {
-                closeChatInterface();
-            } else if (isManual) { // Only open if manually triggered
-                chatInterface.classList.add('active');
-                overlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-        }
+<!-- ================================================== -->
+<!-- 2. ADD THE SCRIPT TO SEND EMAIL -->
+<!-- ================================================== -->
+<script type="text/javascript">
+  (function() {
+    // ==================================================
+    // ==> 1. REPLACE WITH YOUR EMAILJS PUBLIC KEY
+    // ==================================================
+    emailjs.init('6k-ZkKo6c6qGV_s8K'); 
+  })();
 
-        function closeChatInterface() {
-            const chatInterface = document.getElementById('whatsapp-interface');
-            const overlay = document.getElementById('chat-overlay');
-            
-            chatInterface.classList.remove('active');
-            overlay.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
+  window.onload = function() {
+    const form = document.getElementById('dreamit-form');
+    const formMessages = document.getElementById('form-messages');
 
-        function selectOption(option) {
-            selectedOption = option;
-            const options = document.querySelectorAll('.quick-option');
-            options.forEach(opt => opt.classList.remove('selected'));
-            
-            event.target.classList.add('selected');
-            
-            // Add user message to chat
-            addUserMessage(event.target.textContent);
-            
-            // Add bot response
-            setTimeout(() => {
-                addBotResponse(option);
-            }, 1000);
-        }
+    // Initialize Bootstrap Datepicker
+    $('#appointmentDate').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true,
+      startDate: new Date(), // Disables selection of past dates
+      todayHighlight: true
+    });
+    
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevents the default form submission
 
-        function addUserMessage(message) {
-            const chatBody = document.querySelector('.chat-body');
-            const userMessage = document.createElement('div');
-            userMessage.className = 'chat-message user-message';
-            userMessage.innerHTML = `
-                <div class="message-content">
-                    <p>${message}</p>
-                    <span class="message-time">Just now</span>
-                </div>
-            `;
-            chatBody.appendChild(userMessage);
-            chatBody.scrollTop = chatBody.scrollHeight;
-        }
+      // Clear previous messages
+      formMessages.style.display = 'none';
+      formMessages.innerHTML = '';
 
-        function addBotResponse(option) {
-            const responses = {
-                'appointment': 'Great! I\'ll help you book an appointment. Please continue on WhatsApp to schedule your visit with our doctors.',
-                'services': 'We offer comprehensive medical services including cardiology, orthopedics, pediatrics, and emergency care. Let\'s discuss your specific needs on WhatsApp.',
-                'emergency': 'For medical emergencies, please call us immediately at +91 903 212 8645 or visit our emergency department. For non-urgent queries, continue on WhatsApp.',
-                'contact': 'You can reach us at +91 903 212 8645 or visit our hospital. Let\'s continue our conversation on WhatsApp for more details.'
-            };
+      // Show a "sending" message or disable the button
+      const submitBtn = form.querySelector('.submit-btn');
+      submitBtn.innerHTML = 'Sending...';
+      submitBtn.disabled = true;
 
-            const chatBody = document.querySelector('.chat-body');
-            const botMessage = document.createElement('div');
-            botMessage.className = 'chat-message bot-message';
-            botMessage.innerHTML = `
-                <div class="message-avatar">
-                    <i class="fas fa-user-md"></i>
-                </div>
-                <div class="message-content">
-                    <p>${responses[option]}</p>
-                    <span class="message-time">Just now</span>
-                </div>
-            `;
-            chatBody.appendChild(botMessage);
-            chatBody.scrollTop = chatBody.scrollHeight;
-        }
+      // Custom validation for appointment date
+      const appointmentDateInput = document.getElementById('appointmentDate');
+      if (!appointmentDateInput.value) {
+        formMessages.style.backgroundColor = '#f8d7da'; // Light red for error
+        formMessages.style.color = '#721c24'; // Dark red text
+        formMessages.innerHTML = '<strong>Error!</strong> Please select an appointment date.';
+        formMessages.style.display = 'block';
+        submitBtn.innerHTML = 'Book Appoinment <i class="flaticon flaticon-right-arrow"></i>'; // Reset button text
+        submitBtn.disabled = false; // Re-enable button
+        return; // Stop form submission
+      }
 
-        function redirectToWhatsApp() {
-            if (selectedOption) {
-                if (selectedOption === 'appointment') {
-                    // Redirect to contact page for appointments
-                    window.location.href = 'contact.html';
-                    return;
-                } else if (selectedOption === 'services') {
-                    // Redirect to service page for services
-                    window.location.href = 'service.html';
-                    return;
-                }
-            }
-            
-            // Default WhatsApp redirect for other options
-            const phoneNumber = '+919032128645';
-            let message = 'Hello! I would like to know more about Dr. Sreedhar\'s Hospital services.';
-            
-            if (selectedOption) {
-                const optionMessages = {
-                    'emergency': 'I need information about emergency services.',
-                    'contact': 'I need your contact information and location details.'
-                };
-                message = `Hello! ${optionMessages[selectedOption] || message}`;
-            }
-            
-            const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-            closeChatInterface();
-        }
-    </script>
+      // ==================================================
+      // ==> 2. REPLACE WITH YOUR SERVICE ID AND TEMPLATE ID
+      // ==================================================
+      const serviceID = 'service_cif0ser';
+      const templateID = 'template_usp4jqz';
 
-    <style>
-        /* WhatsApp Floating Button Styles */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-            z-index: 9999;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            animation: pulse 2s infinite;
-        }
+      // Send the form data using EmailJS
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          // On Success
+          submitBtn.innerHTML = 'Book Appoinment <i class="flaticon flaticon-right-arrow"></i>';
+          submitBtn.disabled = false;
+          formMessages.style.backgroundColor = '#d4edda'; // Light green for success
+          formMessages.style.color = '#155724'; // Dark green text
+          formMessages.innerHTML = '<strong>Success!</strong> Your appointment request has been sent successfully. We will contact you shortly.';
+          formMessages.style.display = 'block';
+          form.reset(); // Clears the form fields
+        }, (err) => {
+          // On Failure
+          submitBtn.innerHTML = 'Book Appoinment <i class="flaticon flaticon-right-arrow"></i>';
+          submitBtn.disabled = false;
+          formMessages.style.backgroundColor = '#f8d7da'; // Light red for error
+          formMessages.style.color = '#721c24'; // Dark red text
+          formMessages.innerHTML = '<strong>Error!</strong> Failed to send request. Please try again. Error: ' + JSON.stringify(err);
+          formMessages.style.display = 'block';
+          console.error('EmailJS Error:', err); // Added for debugging
+        });
+    });
+  }
+</script>
 
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-            }
-            50% {
-                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
-            }
-            100% {
-                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-            }
-        }
 
-        .whatsapp-float:hover {
-            background-color: #128c7e;
-            transform: scale(1.1);
-            animation: none;
-        }
 
-        .whatsapp-button {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50px;
-        }
-
-        .whatsapp-tooltip {
-            position: absolute;
-            right: 70px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #333;
-            color: white;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 14px;
-            white-space: nowrap;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .whatsapp-tooltip::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            margin-top: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: transparent transparent transparent #333;
-        }
-
-        .whatsapp-float:hover .whatsapp-tooltip {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* Chat Interface Overlay */
-        .chat-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 9998;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .chat-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* WhatsApp Chat Interface */
-        .whatsapp-chat-interface {
-            position: fixed;
-            bottom: 120px;
-            right: 40px;
-            width: 350px;
-            height: 500px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            z-index: 10000;
-            transform: translateY(100px) scale(0.8);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            overflow: hidden;
-        }
-
-        .whatsapp-chat-interface.active {
-            transform: translateY(0) scale(1);
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* Chat Header */
-        .chat-header {
-            background: linear-gradient(135deg, #25d366, #128c7e);
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .chat-header-info {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .chat-avatar {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .chat-header-text h4 {
-            margin: 0;
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .online-status {
-            font-size: 12px;
-            opacity: 0.9;
-        }
-
-        .close-chat {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 50%;
-            transition: background-color 0.3s ease;
-        }
-
-        .close-chat:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Chat Body */
-        .chat-body {
-            height: 320px;
-            overflow-y: auto;
-            padding: 20px;
-            background: #f0f2f5;
-        }
-
-        .chat-message {
-            margin-bottom: 15px;
-            display: flex;
-            gap: 10px;
-        }
-
-        .bot-message {
-            justify-content: flex-start;
-        }
-
-        .user-message {
-            justify-content: flex-end;
-        }
-
-        .message-avatar {
-            width: 35px;
-            height: 35px;
-            background: #25d366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
-
-        .message-content {
-            background: white;
-            padding: 12px 16px;
-            border-radius: 18px;
-            max-width: 250px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .user-message .message-content {
-            background: #dcf8c6;
-        }
-
-        .message-content p {
-            margin: 0 0 5px 0;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        .message-time {
-            font-size: 11px;
-            color: #666;
-            display: block;
-            text-align: right;
-        }
-
-        /* Quick Options */
-        .quick-options {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .quick-option {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 12px;
-            padding: 12px 8px;
-            font-size: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .quick-option:hover {
-            border-color: #25d366;
-            background: #f0fff4;
-        }
-
-        .quick-option.selected {
-            background: #25d366;
-            color: white;
-            border-color: #25d366;
-        }
-
-        /* Chat Footer */
-        .chat-footer {
-            padding: 20px;
-            background: white;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .whatsapp-redirect-btn {
-            width: 100%;
-            background: #25d366;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 25px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            transition: background-color 0.3s ease;
-        }
-
-        .whatsapp-redirect-btn:hover {
-            background: #128c7e;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
-                font-size: 24px;
-            }
-            
-            .whatsapp-tooltip {
-                font-size: 12px;
-                padding: 6px 10px;
-                right: 60px;
-            }
-
-            .whatsapp-chat-interface {
-                width: 90%;
-                right: 5%;
-                bottom: 90px;
-                height: 450px;
-            }
-
-            .quick-options {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Scrollbar Styling */
-        .chat-body::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .chat-body::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        .chat-body::-webkit-scrollbar-thumb {
-            background: #c1c1c1;
-            border-radius: 3px;
-        }
-
-        .chat-body::-webkit-scrollbar-thumb:hover {
-            background: #a8a8a8;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/whatsapp.css" type="text/css" media="all" />
 
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="venobox/venobox.js"></script>
     <script src="venobox/venobox.min.js"></script>
