@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from aonetheme.com/mediket/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 10:25:42 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+<title>Dr.Sreedhar's Hospital and Doctors Appoinment Services</title>    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- bootstrap datepicker CSS -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+    
+    <!-- carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.carousel.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/all.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- font-flaticon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/flaticon.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- theme-default CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/theme-default.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- meanmenu CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/meanmenu.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- venobox CSS -->
+    <link
+      rel="stylesheet"
+      href="venobox/venobox.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-icons.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- Main Style CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+    
+    <!-- Hero Section Styles -->
+    <style>
+      .hero-section {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url('assets/images/main-home/contact_hero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(59, 130, 246, 0.8) 100%);
+        z-index: 1;
+      }
+      
+      .hero-container {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      .hero-content {
+        text-align: center;
+        color: white;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .hero-subtitle {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #93C5FD;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      
+      .hero-title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        font-family: 'Clash Display', sans-serif;
+      }
+      
+      .hero-description {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 40px;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .hero-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        background: linear-gradient(135deg, #FF6B35, #F59E0B);
+        color: white;
+        padding: 18px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+      }
+      
+      .hero-cta:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
+        color: white;
+        text-decoration: none;
+      }
+      
+      .hero-visual {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+      }
+      
+      .floating-shape {
+        position: absolute;
+        opacity: 0.1;
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      .shape-1 {
+        top: 20%;
+        left: 10%;
+        width: 100px;
+        height: 100px;
+        background: #93C5FD;
+        border-radius: 50%;
+        animation-delay: 0s;
+      }
+      
+      .shape-2 {
+        top: 60%;
+        right: 15%;
+        width: 80px;
+        height: 80px;
+        background: #FF6B35;
+        border-radius: 20px;
+        animation-delay: 2s;
+      }
+      
+      .shape-3 {
+        bottom: 20%;
+        left: 20%;
+        width: 60px;
+        height: 60px;
+        background: #F59E0B;
+        border-radius: 50%;
+        animation-delay: 4s;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-section {
+          min-height: 80vh;
+          background-attachment: scroll;
+        }
+        
+        .hero-title {
+          font-size: 2.5rem;
+        }
+        
+        .hero-subtitle {
+          font-size: 1rem;
+        }
+        
+        .hero-description {
+          font-size: 1.1rem;
+        }
+        
+        .hero-cta {
+          padding: 15px 30px;
+          font-size: 1rem;
+        }
+        
+        .floating-shape {
+          display: none;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .hero-title {
+          font-size: 2rem;
+        }
+        
+        .hero-container {
+          padding: 0 15px;
+        }
+      }
+    </style>
+    <!-- responsive CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/responsive.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+
+    <script src="assets/js/swiper.min.js"></script>
+
+    <!-- modernizr js -->
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/clash-display"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/aos.css" />
+  </head>
+  <body>
+    <!-- loder -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    </div>
+
+    <!-- Curser Pointer -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+   <!--==================================================-->
+    <!-- Start mediket Topber Area -->
+    <!--==================================================-->
+    <div class="topber_area">
+      <div class="container-fluid">
+        <div class="row topber_upper align-items-center d-flex">
+          <div class="col-lg-6">
+            <div class="topber-text">
+              <p><img src="assets/images/slider/top-shape.png" alt="">Welcome Mediket hospital and doctors appoinment services</p>
+            </div>             
+          </div>
+          <div class="col-lg-6">
+            <!--header top address-->
+            <div class="header-address-info">
+              <p><span><i class="fas fa-map-marker-alt"></i></span>Mahedipatnam,Gachibowli - Hyderabad<span class="right_info"><i class="bi bi-envelope"></i></span> info@example.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Topber Area -->
+    <!--==================================================-->
+
+
+    <!--==================================================-->
+    <!-- Start mediket Main Menu  -->
+    <!--==================================================-->
+    <div id="sticky-header" class="meedy_nav_manu style-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-2">
+            <div class="logo cursor-scale small">
+              <a class="logo_img" href="index-2.html" title="DR.SREEDHAR'S" style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+                DR.SREEDHAR'S
+              </a>
+              <a class="main_sticky" href="index-2.html" title="DR.SREEDHAR'S" style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+                DR.SREEDHAR'S
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <nav class="meedy_menu">
+              <ul class="nav_scroll">
+                <li>
+                  <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+                </li>
+                <li>
+                  <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="mdy-hover cursor-scale small" href="contact.html"
+                    >Contact </a
+                  >
+                </li>
+              </ul>
+              <div class="mediket-right-side cursor-scale small">
+                <!-- header button -->
+                <div class="header-button">
+                  <a href="appointment.html">
+                    Book an Appoinment
+                    <div class="mediket-hover-btn hover-btn"></div>
+                    <div class="mediket-hover-btn hover-btn2"></div>
+                    <div class="mediket-hover-btn hover-btn3"></div>
+                    <div class="mediket-hover-btn hover-btn4"></div>
+                  </a>
+                </div>
+                <div class="sidebar">
+                  <div class="nav-btn navSidebar-button">
+                    <span><i class="fas fa-align-left"></i></span>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mediket Mobile Menu  -->
+    <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+      <div class="mobile-menu">
+        <nav class="meedy_menu">
+          <ul class="nav_scroll">
+            <li>
+              <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+            </li>
+            <li>
+              <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+            </li>
+            <li>
+              <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a class="mdy-hover cursor-scale small" href="contact.html"
+                >Contact </a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Main Menu  -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start mediket Breatcome Section  -->
+    <!--==================================================-->
+    <div class="breatcome-section d-flex align-items-center" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/gallery/contact.jpg'); background-size: cover; background-position: center; min-height: 350px; position: relative;">
+      
+      <!-- Social Icons - Left Side -->
+   <div style="position: absolute; left: 40px; top: 50%; transform: translateY(-50%); z-index: 10;">
+        <div style="writing-mode: vertical-rl; text-orientation: mixed; margin-bottom: 40px;">
+          <span style="color: #ffffff; font-size: 12px; font-weight: 400; letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">FOLLOW US</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <a href="#" style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="container" style="position: relative; z-index: 5;">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <h1 style="color: #ffffff; font-size: 3.5rem; font-weight: 700; margin-bottom: 25px; font-family: 'Clash Display', sans-serif; text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">Contact Us</h1>
+              <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <a href="index.html" style="color: #60A5FA; text-decoration: none; font-weight: 500; font-size: 16px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Home</a>
+                <span style="color: #ffffff; margin: 0 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">></span>
+                <span style="color: #ffffff; font-weight: 500; font-size: 16px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Contact Us</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Breatcome Section  -->
+    <!--==================================================-->
+        <div class="row justify-content-center mb-80" style="margin-top: 60px;">
+          <div class="col-lg-10">
+            <div style="background: linear-gradient(135deg, #1E88E5, #1976D2); border-radius: 20px; padding: 40px; box-shadow: 0 20px 40px rgba(30, 136, 229, 0.3);">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                  <div class="text-center" style="padding: 20px; border-right: 1px solid rgba(255,255,255,0.2);">
+                    <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                      <i class="fas fa-map-marker-alt" style="font-size: 32px; color: white;"></i>
+                    </div>
+                    <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;">Hospital Branches</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6; margin: 0;">
+                      <strong>Mehdipatnam Branch</strong><br>
+                      <strong>Gaddi Bowli Branch</strong><br>
+                      Multi Speciality Hospital
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                  <div class="text-center" style="padding: 20px; border-right: 1px solid rgba(255,255,255,0.2);">
+                    <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                      <i class="fas fa-phone-alt" style="font-size: 32px; color: white;"></i>
+                    </div>
+                    <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;">Contact Numbers</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6; margin: 0;">
+                      <strong>Mehdipatnam:</strong><br>
+                      9848030473, 9010148870<br>
+                      <strong>Gaddi Bowli:</strong><br>
+                      9603604573, 9603604135
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="text-center" style="padding: 20px;">
+                    <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                      <i class="fas fa-envelope" style="font-size: 32px; color: white;"></i>
+                    </div>
+                    <h3 style="color: white; font-size: 1.5rem; font-weight: 600; margin-bottom: 15px;">Timings & Contact</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6; margin: 0;">
+                      <strong>Mehdipatnam:</strong> 10:00 am to 2:00 pm<br>
+                      <strong>Gaddi Bowli:</strong> 5:00 pm to 8:00 pm<br>
+                      <strong>Email:</strong> sreedhardrkammela@gmail.com<br>
+                      <strong>Website:</strong> www.drkammelasreedhar.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--==================================================-->
+    <!-- Start mediket Appoinment Section  -->
+    <!--==================================================-->
+    <div class="appoinment-section style-2">
+      <div class="container-fluid">
+        <div class="row align-items-stretch">
+          <div class="col-lg-6">
+  <div class="contact_thumb" style="min-height: 580px; height: 100%;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30460.62799983196!2d78.4201648419615!3d17.38356973684877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a534f3d69%3A0x6a5405963454b52!2sMehdipatnam%2C%20Hyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1668789395893!5m2!1sen!2sus" 
+      width="100%" 
+      height="100%" 
+      style="border:0; border-radius: 12px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+          <div class="col-lg-6" data-aos="zoom-in-left">
+            <div class="contact-form-box h-100">
+              <div class="mediket-section-title style_two mr-b-35">
+                <h4>Appoinment</h4>
+                <h1>Get an Appoinment</h1> 
+              </div>
+            
+              <form
+                action="https://formspree.io/f/myyleorq"
+                method="POST"
+                id="dreamit-form"
+              >
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-box">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Full Name*"
+                        required=""
+                      />
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-box">
+                      <input
+                        type="text"
+                        name="email"
+                        placeholder="Your E-Mail*"
+                        required=""
+                      />
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-box">
+                      <input
+                        type="text"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required=""
+                      />
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-box">
+                      <input
+                        type="text"
+                        name="appointment_date"
+                        id="appointmentDate"
+                        placeholder="Appointment Date"
+                        required=""
+                        readonly
+                      />
+                      <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-box">
+                      <select id="cars">
+                       <option value="select" selected>Select Doctor*</option>
+                        <option value="sridhar">Dr.Kammela Sridhar</option>
+                        <option value="sredevi">Dr.Kammela Sredevi</option>
+                        
+                      </select>
+                      <i class="fas fa-bookmark"></i>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-6">
+                    <div class="check_bx">
+                      <input type="checkbox">
+                      <p>I agree terms and conditions</p>
+                    </div>
+                    <div class="submit-button cursor-scale small">
+                      <button class="submit-btn">
+                        Book Appoinment <i class="flaticon flaticon-right-arrow"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Appoinment Section  -->
+    <!--==================================================-->
+
+    
+
+
+
+    <!--==================================================-->
+    <!-- Start mediket Subscribe Section -->
+    <!--==================================================-->
+    <div class="mediket-subscribe" style="background: linear-gradient(135deg, #1E88E5, #1976D2); padding: 60px 0;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="subscribe-content" data-aos="fade-up">
+              <div class="subscribe-title">
+                <h1 style="color: white; font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin: 0;">Delivering Quality Health Care<br>for Next Generations</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="rating-section text-center" data-aos="fade-up">
+              <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+                <div style="width: 80px; height: 80px; background: #FF6B35; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <i class="fas fa-star" style="color: white; font-size: 24px;"></i>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="contact-button text-center" data-aos="fade-down">
+              <a href="contact.html" style="background: rgba(0,0,0,0.8); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease;">
+                Contact Us
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Subscribe Section -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start mediket Footer Section -->
+    <!--==================================================-->
+    <div class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer_widget_upper">
+              <div class="company-logo cursor-scale small">
+                <a href="index-2.html"
+                  ><h1 style="color: #ffffff; font-size: 2.5rem; font-weight: bold; margin: 0;">DR.SREEDHAR'S</h1>
+                </a>
+              </div>
+              <div class="footer_title">
+                <h2>Award Wining Medical</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <div class="widget widgets-company-info"data-aos="zoom-in-right">                  
+              <h4 class="widget-title">About Us</h4>
+              <div class="company-info-desc">
+                <p>
+                  Completely e-enable covalent functionalities and medical positioning infomediarie interactively
+                </p>
+              </div>
+              <div class="footer-mediket-contact">
+                <div class="mediket-info">
+                  <h5>Mahedipatnam,Gachibowli<br>Hyderabad</h5>
+                </div>
+                <div class="mediket-info">
+                  <h5>+91 90321 28645</h5>
+                </div>
+                <div class="mediket-info">
+                  <h5>sreedhardrkammela@gmail.com</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="widget widget-nav-menu" data-aos="zoom-out">
+              <h4 class="widget-title">Navigation</h4>
+              <div class="menu-quick-link-content">
+                <ul class="footer-menu cursor-scale small">
+                  <li><a href="index.html"> Home </a></li>
+                  <li><a href="service.html"> Services </a></li>
+                  <li><a href="about.html"> About Us </a></li>
+                  <li><a href="gallery.html"> Gallery </a></li>
+                  <li><a href="contact.html"> Contact </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="mediket-address" data-aos="zoom-in-left">
+              <h4 class="widget-title">Subscribe Newsletter</h4>
+              <div class="footer_widget_anytime_alarm">
+                <div class="anytime_alarm">
+                  <i class="fa-regular fa-bell"></i>
+                </div>
+                <p>Signup our newsletter for lates updates
+                  from our medical anytime</p>
+              </div>
+              <form>
+                <div class="subscribe_form">
+                  <input type="email" name="email" placeholder="sreedhardrkammela@gmail.com" />
+                  <button type="submit" class="submits-btn">
+                    <i class="flaticon flaticon-right-arrow"></i>
+                  </button>
+                </div>
+              </form>
+              <div class="mediket-social-icon cursor-scale small">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"> </i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="foorer-shape">
+            <div class="footer-thumb1" data-aos="zoom-in-left">
+              <img src="assets/images/main-home/feathure-shapes.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row footer-btm d-flex align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="mediket-company-desc">
+              <p>
+                Copyright © 2025 Dr.Sreedhar's 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="footer-bottom-menu text-right">
+              <ul>
+                <li><a href="#">FACEBOOK</a></li>
+                <li><a href="#">TWITTER</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Footer Section -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Sidebar Cart Item -->
+    <!--==================================================-->
+  <div class="xs-sidebar-group info-group">
+          <div class="xs-overlay xs-bg-black"></div>
+          <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+              <div class="widget-heading">
+                <a href="#" class="close-side-widget">
+                  <i class="far fa-times-circle"></i>
+                </a>
+              </div>
+              <div class="sidebar-textwidget">
+                <!-- Sidebar Info Content -->
+                <div class="sidebar-info-contents">
+                  <div class="content-inner2">
+                    <div class="nav-logo">
+                      <a href="index.html"
+                        ><h1 style="color: #ffffff; font-size: 1.5rem; font-weight: bold; margin: 0;">DR.SREEDHAR'S</h1>
+                      </a>
+                    </div>
+                    <div class="row padding-two">
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog6.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog5.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog4.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog3.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact-info">
+                      <h2>Contact Info</h2>
+                      <ul class="list-style-one">
+                        <li>
+                          <span><i class="bi bi-envelope"></i></span>Mahedipatnam,Gachibowli-Hyderabad                        </li>
+                        <li>
+                          <span><i class="bi bi-telephone-forward"></i></span
+                          >+91 9032128645
+                        </li>
+                        <li>
+                          <span><i class="bi bi-geo-alt"></i></span>sreedhardrkammela@gmail.com
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    <!-- Social Box -->
+                    <ul class="social-box">
+                      <li class="facebook">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                      </li>
+                      <li class="twitter">
+                        <a href="#" class="fab fa-twitter"></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#" class="fab fa-instagram"></a>
+                      </li>
+                      <li class="youtube">
+                        <a href="https://www.youtube.com/@dr.kammelasreedhar4605" class="fab fa-youtube"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!--==================================================-->
+    <!-- End Sidebar section Area -->
+    <!--==================================================-->
+
+    <!-- WhatsApp Chat Interface -->
+    <!--==================================================-->
+    <div class="whatsapp-float" id="whatsapp-chat">
+        <div class="whatsapp-button" onclick="toggleChatInterface(true)">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="whatsapp-tooltip">
+            <span>Chat with us!</span>
+        </div>
+    </div>
+
+    <!-- WhatsApp Chat Interface Popup -->
+    <div class="whatsapp-chat-interface" id="whatsapp-interface">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img src="assets/images/logo3.png" alt="Dr. Sreedhar Hospital" class="chat-avatar">
+                <div class="chat-header-text">
+                    <h4>Dr. Sreedhar Hospital</h4>
+                    <span class="online-status">Online</span>
+                </div>
+            </div>
+            <button class="close-chat" onclick="closeChatInterface()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="chat-message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! 👋 Welcome to Dr. Sreedhar Hospital!</p>
+                    <p>How can I assist you today?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            
+            <div class="quick-options">
+                <button class="quick-option" onclick="selectOption('appointment')">
+                    📅 Book Appointment
+                </button>
+                <button class="quick-option" onclick="selectOption('services')">
+                    🏥 Our Services
+                </button>
+                <button class="quick-option" onclick="selectOption('emergency')">
+                    🚨 Emergency
+                </button>
+                <button class="quick-option" onclick="selectOption('contact')">
+                    📞 Contact Info
+                </button>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="whatsapp-redirect-btn" onclick="redirectToWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                Continue on WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Chat Interface Overlay -->
+    <div class="chat-overlay" id="chat-overlay" onclick="closeChatInterface()"></div>
+    <!--==================================================-->
+    <!-- End WhatsApp Chat Interface -->
+    <!--==================================================-->
+
+    <script>
+        // WhatsApp Chat Interface Functions
+        let selectedOption = '';
+
+        function toggleChatInterface(isManual = false) {
+            const chatInterface = document.getElementById('whatsapp-interface');
+            const overlay = document.getElementById('chat-overlay');
+            
+            if (chatInterface.classList.contains('active')) {
+                closeChatInterface();
+            } else if (isManual) { // Only open if manually triggered
+                chatInterface.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeChatInterface() {
+            const chatInterface = document.getElementById('whatsapp-interface');
+            const overlay = document.getElementById('chat-overlay');
+            
+            chatInterface.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function selectOption(option) {
+            selectedOption = option;
+            const options = document.querySelectorAll('.quick-option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            
+            event.target.classList.add('selected');
+            
+            // Add user message to chat
+            addUserMessage(event.target.textContent);
+            
+            // Add bot response
+            setTimeout(() => {
+                addBotResponse(option);
+            }, 1000);
+        }
+
+        function addUserMessage(message) {
+            const chatBody = document.querySelector('.chat-body');
+            const userMessage = document.createElement('div');
+            userMessage.className = 'chat-message user-message';
+            userMessage.innerHTML = `
+                <div class="message-content">
+                    <p>${message}</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            `;
+            chatBody.appendChild(userMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function addBotResponse(option) {
+            const responses = {
+                'appointment': 'Great! I\'ll help you book an appointment. Please continue on WhatsApp to schedule your visit with our doctors.',
+                'services': 'We offer comprehensive medical services including cardiology, orthopedics, pediatrics, and emergency care. Let\'s discuss your specific needs on WhatsApp.',
+                'emergency': 'For medical emergencies, please call us immediately at +91 903 212 8645 or visit our emergency department. For non-urgent queries, continue on WhatsApp.',
+                'contact': 'You can reach us at +91 903 212 8645 or visit our hospital. Let\'s continue our conversation on WhatsApp for more details.'
+            };
+
+            const chatBody = document.querySelector('.chat-body');
+            const botMessage = document.createElement('div');
+            botMessage.className = 'chat-message bot-message';
+            botMessage.innerHTML = `
+                <div class="message-avatar">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="message-content">
+                    <p>${responses[option]}</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            `;
+            chatBody.appendChild(botMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function redirectToWhatsApp() {
+            if (selectedOption) {
+                if (selectedOption === 'appointment') {
+                    // Redirect to contact page for appointments
+                    window.location.href = 'contact.html';
+                    return;
+                } else if (selectedOption === 'services') {
+                    // Redirect to service page for services
+                    window.location.href = 'service.html';
+                    return;
+                }
+            }
+            
+            // Default WhatsApp redirect for other options
+            const phoneNumber = '+919032128645';
+            let message = 'Hello! I would like to know more about Dr. Sreedhar\'s Hospital services.';
+            
+            if (selectedOption) {
+                const optionMessages = {
+                    'emergency': 'I need information about emergency services.',
+                    'contact': 'I need your contact information and location details.'
+                };
+                message = `Hello! ${optionMessages[selectedOption] || message}`;
+            }
+            
+            const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+            closeChatInterface();
+        }
+    </script>
+
+    <style>
+        /* WhatsApp Floating Button Styles */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+            }
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+            animation: none;
+        }
+
+        .whatsapp-button {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent #333;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Chat Interface Overlay */
+        .chat-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .chat-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* WhatsApp Chat Interface */
+        .whatsapp-chat-interface {
+            position: fixed;
+            bottom: 120px;
+            right: 40px;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            z-index: 10000;
+            transform: translateY(100px) scale(0.8);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            overflow: hidden;
+        }
+
+        .whatsapp-chat-interface.active {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Chat Header */
+        .chat-header {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-header-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .chat-header-text h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .online-status {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .close-chat {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-chat:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Chat Body */
+        .chat-body {
+            height: 320px;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+
+        .chat-message {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .bot-message {
+            justify-content: flex-start;
+        }
+
+        .user-message {
+            justify-content: flex-end;
+        }
+
+        .message-avatar {
+            width: 35px;
+            height: 35px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .message-content {
+            background: white;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-message .message-content {
+            background: #dcf8c6;
+        }
+
+        .message-content p {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .message-time {
+            font-size: 11px;
+            color: #666;
+            display: block;
+            text-align: right;
+        }
+
+        /* Quick Options */
+        .quick-options {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .quick-option {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 12px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .quick-option:hover {
+            border-color: #25d366;
+            background: #f0fff4;
+        }
+
+        .quick-option.selected {
+            background: #25d366;
+            color: white;
+            border-color: #25d366;
+        }
+
+        /* Chat Footer */
+        .chat-footer {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .whatsapp-redirect-btn {
+            width: 100%;
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-redirect-btn:hover {
+            background: #128c7e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+            
+            .whatsapp-tooltip {
+                font-size: 12px;
+                padding: 6px 10px;
+                right: 60px;
+            }
+
+            .whatsapp-chat-interface {
+                width: 90%;
+                right: 5%;
+                bottom: 90px;
+                height: 450px;
+            }
+
+            .quick-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scrollbar Styling */
+        .chat-body::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .chat-body::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+
+        .chat-body::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+    </style>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="venobox/venobox.js"></script>
+    <script src="venobox/venobox.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/jquery.scrollUp.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/my.js"></script>
+</body>
+</html>

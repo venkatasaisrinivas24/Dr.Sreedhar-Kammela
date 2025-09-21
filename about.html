@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Mirrored from aonetheme.com/mediket/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 10:25:39 GMT -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Dr.Sreedhar's Hospital and Doctors Appoinment Services</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicon -->
+  
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+  <!-- carousel CSS -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all" />
+  <!-- font-awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />
+  <!-- font-flaticon CSS -->
+  <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />
+  <!-- theme-default CSS -->
+  <link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />
+  <!-- meanmenu CSS -->
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
+  <!-- venobox CSS -->
+  <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all" />
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all" />
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+  <!-- responsive CSS -->
+  <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+
+  <script src="assets/js/swiper.min.js"></script>
+
+  <!-- modernizr js -->
+  <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link rel="stylesheet" href="assets/css/achievements.css" />
+
+  <style>
+    /*----------------------------------------------------*/
+    /*  MOBILE AND RESPONSIVE STYLES
+    /*----------------------------------------------------*/
+
+    /* --- General Responsive Rules --- */
+    body {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+
+    /* --- Top Bar --- */
+    @media (max-width: 991.98px) {
+        .topber_area .topber_upper {
+            flex-direction: column;
+            text-align: center;
+        }
+        .header-address-info p {
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .header-address-info p span {
+            display: block;
+            margin-top: 5px;
+        }
+        .header-address-info .right_info {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+    /* --- Breatcome (Hero) Section --- */
+    .breatcome-section {
+        min-height: 280px;
+        background-attachment: scroll; /* Disable parallax on mobile for performance */
+    }
+    .breatcome-section h1 {
+        font-size: 2.5rem; /* Reduced font size for mobile */
+    }
+    .breatcome-social-icons {
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .breatcome-social-icons .follow-us-text {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    .breatcome-social-icons .social-links a {
+        font-size: 14px;
+    }
+    .breatcome-content .page-title {
+        font-size: 14px;
+    }
+    
+    @media (max-width: 767.98px) {
+        .breatcome-section {
+            padding-left: 50px; /* Make space for social icons */
+        }
+        .breatcome-section h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .breatcome-social-icons {
+            left: 15px;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .breatcome-section {
+            padding-left: 45px;
+        }
+        .breatcome-social-icons {
+            left: 10px;
+        }
+        .breatcome-social-icons .social-links {
+            gap: 15px;
+        }
+    }
+    
+
+    /* --- Doctor Profile & Achievements Sections --- */
+    .doctor-profile-section {
+        padding: 60px 0;
+    }
+
+    .doctor-profile-section .row.align-items-center {
+        flex-direction: column-reverse; /* Stack image above text on mobile */
+    }
+    
+    .doctor-image-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .doctor-image-wrapper img {
+        height: auto !important; /* Let height be auto to maintain aspect ratio */
+        max-height: 450px;
+    }
+
+    .achievements-section {
+        padding: 40px 20px;
+    }
+
+    .achievements-section h1,
+    .achievements-section h4 {
+        word-wrap: break-word;
+    }
+    
+    .achievements-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .achievement-card .achievement-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .achievement-card .achievement-content .achievement-image {
+        margin: 0 auto;
+    }
+
+    .achievement-card .achievement-content .achievement-image div {
+        width: 180px;
+        height: 130px;
+    }
+    
+    .achievement-card .achievement-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .achievement-stats {
+        justify-content: center;
+    }
+    
+    /* Order reversal for specific cards on mobile */
+    .ugadi-award .achievement-content {
+        flex-direction: column-reverse; /* Image below text */
+    }
+
+    .book-records .achievement-content {
+        flex-direction: column-reverse;
+    }
+
+    @media (min-width: 992px) {
+        /* On desktop, keep original flex-direction */
+        .doctor-profile-section .row.align-items-center {
+            flex-direction: row;
+        }
+        .achievement-card .achievement-content {
+            flex-direction: row;
+            text-align: left;
+            gap: 30px;
+        }
+        .achievement-stats {
+            justify-content: flex-start;
+        }
+        .ugadi-award .achievement-content, .book-records .achievement-content {
+            flex-direction: row;
+        }
+    }
+
+
+    /* --- Branches Section --- */
+    .team-section .team-single-boxs {
+        margin-bottom: 30px;
+    }
+
+
+    /* --- WhatsApp Chat Widget --- */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 28px;
+    }
+
+    .whatsapp-chat-interface {
+        width: calc(100% - 30px);
+        max-width: 350px;
+        height: auto;
+        max-height: 80vh;
+        bottom: 90px;
+        right: 15px;
+    }
+    
+    .chat-body {
+        height: calc(100% - 150px);
+        min-height: 250px;
+    }
+
+    /* --- Footer --- */
+    .footer-section .widget {
+        margin-bottom: 30px;
+    }
+    .footer-btm {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-btm .mediket-company-desc,
+    .footer-btm .footer-bottom-menu {
+        text-align: center;
+        width: 100%;
+    }
+    .footer-btm .footer-bottom-menu {
+        margin-top: 15px;
+    }
+    .footer-btm .footer-bottom-menu ul {
+        justify-content: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- loder -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loder-section left-section"></div>
+    <div class="loder-section right-section"></div>
+  </div>
+
+  <!-- Curser Pointer -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <!--==================================================-->
+  <!-- Start mediket Topber Area -->
+  <!--==================================================-->
+  <div class="topber_area">
+    <div class="container-fluid">
+      <div class="row topber_upper align-items-center d-flex">
+        <div class="col-lg-6">
+          <div class="topber-text">
+            <p><img src="assets/images/slider/top-shape.png" alt="">Welcome Dr.Sreedhar's hospital and doctors
+              appoinment
+              services</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!--header top address-->
+          <div class="header-address-info">
+            <p><span><i class="fas fa-map-marker-alt"></i></span>Mehdipatnam,Gachi Bowli - Hyderabad<span class="right_info"><i class="bi bi-envelope"></i></span> sreedhardrkammela@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Topber Area -->
+  <!--==================================================-->
+
+
+  <!--==================================================-->
+  <!-- Start mediket Main Menu  -->
+  <!--==================================================-->
+  <div id="sticky-header" class="meedy_nav_manu style-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <div class="logo cursor-scale small">
+            <a class="logo_img" href="index-2.html" title="DR.SREEDHAR'S" style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+              DR.SREEDHAR'S
+            </a>
+            <a class="main_sticky" href="index-2.html" title="DR.SREEDHAR'S" style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+              DR.SREEDHAR'S
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <nav class="meedy_menu">
+            <ul class="nav_scroll">
+              <li>
+                <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="contact.html">Contact </a>
+              </li>
+            </ul>
+            <div class="mediket-right-side cursor-scale small">
+              <!-- header button -->
+              <div class="header-button">
+                <a href="contact.html">
+                  Book an Appoinment
+                  <div class="mediket-hover-btn hover-btn"></div>
+                  <div class="mediket-hover-btn hover-btn2"></div>
+                  <div class="mediket-hover-btn hover-btn3"></div>
+                  <div class="mediket-hover-btn hover-btn4"></div>
+                </a>
+              </div>
+              <div class="sidebar">
+                <div class="nav-btn navSidebar-button">
+                  <span><i class="fas fa-align-left"></i></span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mediket Mobile Menu  -->
+  <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+    <div class="mobile-menu">
+      <nav class="meedy_menu">
+        <ul class="nav_scroll">
+          <li>
+            <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="contact.html">Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Main Menu  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start mediket Breatcome Section  -->
+  <!--==================================================-->
+  <div class="breatcome-section d-flex align-items-center" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/gallery/about.jpg'); background-size: cover; background-position: center; position: relative;">
+
+    <!-- Social Icons - Left Side -->
+    <div class="breatcome-social-icons" style="position: absolute; z-index: 10;">
+      <div class="follow-us-text" style="writing-mode: vertical-rl; text-orientation: mixed; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+        <span>FOLLOW US</span>
+      </div>
+      <div class="social-links" style="display: flex; flex-direction: column; gap: 20px;">
+        <a href="#" style="color: #ffffff; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #ffffff; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #ffffff; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" style="position: relative; z-index: 5;">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center breatcome-content">
+            <h1 style="color: #ffffff; font-weight: 700; margin-bottom: 25px; font-family: 'Clash Display', sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+              About Us</h1>
+            <div class="page-title" style="display: flex; align-items: center; justify-content: center; gap: 8px; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+              <a href="index.html" style="color: #60A5FA; text-decoration: none; font-weight: 500;">Home</a>
+              <span style="margin: 0 5px;">></span>
+              <span>About Us</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Breatcome Section  -->
+  <!--==================================================-->
+
+
+  <!--==================================================-->
+  <!-- Start Dr. Kammela Sreedhar Section -->
+  <!--==================================================-->
+  <div class="doctor-profile-section" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mediket-section-title text-center mb-60">
+            <h4>Our Director</h4>
+            <h1>Dr. KAMMELA SREEDHAR</h1>
+            <p>Director - Multiple World Records Holder</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-80">
+        <div class="col-lg-4">
+          <div class="doctor-image-wrapper" style="border-radius: 15px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transition: all 0.3s ease; position: relative;">
+            <img src="assets/images/doctor/Dr.KS recent photo_imresizer.jpg" alt="Dr. Kammela Sreedhar" style="width: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;" />
+            <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px;">
+              <h4 style="color: #1e3a8a; margin: 0; font-size: 1.1rem; font-weight: 600;">Dr. KAMMELA SREEDHAR</h4>
+              <p style="color: #3B82F6; margin: 5px 0 0 0; font-size: 14px; font-weight: 500;">Director & 11 World Records Holder</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="doctor-details">
+            <div class="qualifications mb-40">
+              <h3 style="color: #1e3a8a; margin-bottom: 20px;">Qualifications & Expertise</h3>
+              <div class="qualification-item mb-15">
+                <h5 style="color: #333; font-weight: 600;">M.S, M.Ch.(P.G.I Chandigarh), FRUS(USA), FACC(USA)</h5>
+              </div>
+              <div class="specializations">
+                <ul style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>MBBS, MD(USA), DGO, FIAMS</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Sr. Consultant Robotic Urologist, Microsurgical Andrologist, Transplant Surgeon</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Laparoscopic & Robotic Minimally invasive Surgeon</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Fellow in MicroSurgical Andrologst, Cleveland Clinic(USA) centre</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Senior Consultant Gynaecologist, IVF & ICSI</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Fertility Specialist, Hysteroscopic & Laparoscopic Surgeon (Germany)</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="fellowships">
+              <h4 style="color: #1e3a8a; margin-bottom: 15px;">International Fellowships</h4>
+              <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 8px; color: #666;">• Robotic Minimally invasive Surgeon</li>
+                <li style="margin-bottom: 8px; color: #666;">• Fellow in Pr-Stacan nstite Y edical ScieSces Hyd.</li>
+                <li style="margin-bottom: 8px; color: #666;">• Professor, Shadan Institute / Ford Health System, Detroit(USA)</li>
+                <li style="margin-bottom: 8px; color: #666;">• Fellow in ART(USA), Cleveland Clinic, OHIO, USA</li>
+                <li style="margin-bottom: 8px; color: #666;">• Fellow, European HRE Society(London)</li>
+                <li style="margin-bottom: 8px; color: #666;">• Fellow European HRE Society (London)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards Section for Dr. Sreedhar -->
+      <div class="row">
+        <div class="col-lg-12" data-aos="zoom-in-left">
+          <div class="achievements-section" style="background: linear-gradient(135deg, #1e3a8a 0%, #3B82F6 100%); border-radius: 20px; margin-top: 40px; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%); pointer-events: none;"></div>
+
+            <div class="mediket-section-title text-center mb-60" style="position: relative; z-index: 2;">
+              <h4 style="color: #dceaa2; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Prestigious Recognition</h4>
+              <h1 style="color: #fff; font-weight: 700; margin-bottom: 20px;">Dr. KAMMELA SREEDHAR's Achievements</h1>
+              <div style="width: 80px; height: 4px; background: linear-gradient(90deg, #dceaa2, #fff); margin: 0 auto; border-radius: 2px;"></div>
+            </div>
+
+            <div class="achievements-grid" style="position: relative; z-index: 2;">
+              <!-- National Awards & World Records -->
+              <div class="achievement-card" data-aos="fade-up" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 30px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: all 0.3s ease; position: relative; overflow: hidden; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.2);">
+                <div class="achievement-content" style="display: flex; align-items: center;">
+                  <div class="achievement-image" style="flex-shrink: 0;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+                      <img src="assets/images/doctor/Phadke award_imresizer.jpg" alt="National Awards & World Records" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" />
+                    </div>
+                  </div>
+                  <div class="achievement-text" style="flex: 1;">
+                    <div class="award-badge" style="display: inline-block; background: linear-gradient(135deg, #dc2626, #ef4444); color: white; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+                      National Recognition
+                    </div>
+                    <h3 style="color: #1e3a8a; font-weight: 700; margin-bottom: 15px; font-family: 'Times New Roman', Times, serif;">National Awards & World Records</h3>
+                    <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin-bottom: 10px;">
+                      <strong style="color: #dc2626;">'5' NATIONAL AWARDS & '11' WORLD RECORDS</strong>
+                    </p>
+                    <p style="color: #718096; font-size: 15px; line-height: 1.6;">
+                      Presented by former Hon'ble Prime Minister of India, Prof. Manmohan Singh as Best M.Ch. Post-Graduate of India & M.Ch PHALKE AWARD for the year 1990-91 by Urological Society of India.
+                    </p>
+                    <div class="achievement-stats" style="margin-top: 20px; display: flex; gap: 20px;">
+                      <div style="text-align: center;">
+                        <div style="color: #dc2626; font-size: 1.5rem; font-weight: 700;">5</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">National Awards</div>
+                      </div>
+                      <div style="text-align: center;">
+                        <div style="color: #dc2626; font-size: 1.5rem; font-weight: 700;">11</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">World Records</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- UGADI VISITA PURASKAR -->
+              <div class="achievement-card ugadi-award" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 30px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: all 0.3s ease; position: relative; overflow: hidden; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.2);">
+                <div class="achievement-content" style="display: flex; align-items: center;">
+                  <div class="achievement-text" style="flex: 1;">
+                    <div class="award-badge" style="display: inline-block; background: linear-gradient(135deg, #059669, #10b981); color: white; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+                      State Recognition
+                    </div>
+                    <h3 style="color: #1e3a8a; font-weight: 700; margin-bottom: 15px; font-family: 'Times New Roman', Times, serif;">UGADI VISITA PURASKAR 2013</h3>
+                    <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin-bottom: 10px;">
+                      <strong style="color: #059669;">Presented by former Hon'ble Chief Minister of Andhra Pradesh, Sri N Kiran Kumar Reddy.</strong>
+                    </p>
+                    <p style="color: #718096; font-size: 15px; line-height: 1.6;">
+                      A prestigious state-level recognition for outstanding contributions to medical science and public health service in Andhra Pradesh.
+                    </p>
+                    <div class="achievement-stats" style="margin-top: 20px; display: flex; gap: 20px;">
+                      <div style="text-align: center;">
+                        <div style="color: #059669; font-size: 1.5rem; font-weight: 700;">2013</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">Year Awarded</div>
+                      </div>
+                      <div style="text-align: center;">
+                        <div style="color: #059669; font-size: 1.5rem; font-weight: 700;">CM</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">Authority</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="achievement-image" style="flex-shrink: 0;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+                      <img src="assets/images/aboutimg/DSC_4768.JPG" alt="UGADI VISITA PURASKAR 2013" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Media & Health Education Records -->
+              <div class="achievement-card" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 30px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: all 0.3s ease; position: relative; overflow: hidden; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.2);">
+                <div class="achievement-content" style="display: flex; align-items: center;">
+                  <div class="achievement-image" style="flex-shrink: 0;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s ease; height: 300px;">
+                      <img src="assets/images/aboutimg/world Amazing 1012 tv.jpg" alt="World Records in Media & Health Education" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s ease;" />
+                    </div>
+                  </div>
+                  <div class="achievement-text" style="flex: 1;">
+                    <div class="award-badge" style="display: inline-block; background: linear-gradient(135deg, #7c3aed, #a855f7); color: white; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+                      Media Excellence
+                    </div>
+                    <h3 style="color: #1e3a8a; font-weight: 700; margin-bottom: 15px; font-family: 'Times New Roman', Times, serif;">World Records in Media & Health Education</h3>
+                    <div style="color: #4a5568; font-size: 15px; line-height: 1.6; margin-bottom: 15px;">
+                      <div style="margin-bottom: 8px;"><strong style="color: #7c3aed;">• Most TV Episodes by a Doctor:</strong> 5,738 episodes on Health & Social Education</div>
+                      <div style="margin-bottom: 8px;"><strong style="color: #7c3aed;">• Longest Weekly Health Column:</strong> 'Andhra Bhoomi' for 11 years & 7 months</div>
+                      <div><strong style="color: #7c3aed;">• Most Live TV Episodes:</strong> 1,578 episodes in 'STUDIO N NEWS'</div>
+                    </div>
+                    <div class="achievement-stats" style="margin-top: 20px; display: flex; gap: 15px;">
+                      <div style="text-align: center;">
+                        <div style="color: #7c3aed; font-size: 1.3rem; font-weight: 700;">5,738</div>
+                        <div style="color: #718096; font-size: 11px; text-transform: uppercase;">TV Episodes</div>
+                      </div>
+                      <div style="text-align: center;">
+                        <div style="color: #7c3aed; font-size: 1.3rem; font-weight: 700;">11+</div>
+                        <div style="color: #718096; font-size: 11px; text-transform: uppercase;">Years Column</div>
+                      </div>
+                      <div style="text-align: center;">
+                        <div style="color: #7c3aed; font-size: 1.3rem; font-weight: 700;">1,578</div>
+                        <div style="color: #718096; font-size: 11px; text-transform: uppercase;">Live Shows</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Book Records -->
+              <div class="achievement-card book-records" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 30px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: all 0.3s ease; position: relative; overflow: hidden; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.2);">
+                <div class="achievement-content" style="display: flex; align-items: center;">
+                  <div class="achievement-text" style="flex: 1;">
+                    <div class="award-badge" style="display: inline-block; background: linear-gradient(135deg, #ea580c, #f97316); color: white; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+                      Record Holder
+                    </div>
+                    <h3 style="color: #1e3a8a; font-weight: 700; margin-bottom: 15px; font-family: 'Times New Roman', Times, serif;">Multiple Book Records</h3>
+                    <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
+                      <strong style="color: #ea580c;">Comprehensive Record Achievement:</strong>
+                    </p>
+                    <div style="color: #718096; font-size: 15px; line-height: 1.6;">
+                      <div style="margin-bottom: 5px;">• 2 Amazing World Records</div>
+                      <div style="margin-bottom: 5px;">• 2 Asian Book Records</div>
+                      <div style="margin-bottom: 5px;">• 2 Indian Book of Records</div>
+                      <div style="margin-bottom: 5px;">• 2 Wonder Records</div>
+                      <div>• 3 Telugu Book of World Records</div>
+                    </div>
+                    <div class="achievement-stats" style="margin-top: 20px; display: flex; gap: 15px;">
+                      <div style="text-align: center;">
+                        <div style="color: #ea580c; font-size: 1.5rem; font-weight: 700;">11</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">Total Records</div>
+                      </div>
+                      <div style="text-align: center;">
+                        <div style="color: #ea580c; font-size: 1.5rem; font-weight: 700;">5</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">Categories</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="achievement-image" style="flex-shrink: 0;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s ease;  height: 300px;">
+                      <img src="assets/images/aboutimg/image.png" alt="Book Records" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Dr. Kammela Sreedhar Section -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Dr. Kammela Sridevi Section -->
+  <!--==================================================-->
+  <div class="doctor-profile-section" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mediket-section-title text-center mb-60">
+            <h4>Our Medical Director</h4>
+            <h1>Dr. KAMMELA SRIDEVI</h1>
+            <p>Eleven World Records Holder, Gold Medalist</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-80">
+        <div class="col-lg-4">
+          <div class="doctor-image-wrapper" style="border-radius: 15px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transition: all 0.3s ease; position: relative;">
+            <img src="assets/images/doctor/kameela sridevi_imresizer.jpg" alt="Dr. Kammela Sridevi" style="width: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;" />
+            <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px;">
+              <h4 style="color: #1e3a8a; margin: 0; font-size: 1.1rem; font-weight: 600;">Dr. KAMMELA SRIDEVI</h4>
+              <p style="color: #3B82F6; margin: 5px 0 0 0; font-size: 14px; font-weight: 500;">Medical Director & Gold Medalist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="doctor-details">
+            <div class="qualifications mb-40">
+              <h3 style="color: #1e3a8a; margin-bottom: 20px;">Qualifications & Expertise</h3>
+              <div class="qualification-item mb-15">
+                <h5 style="color: #333; font-weight: 600;">MBBS, MD(USA), DGO, FIAMS</h5>
+              </div>
+              <div class="specializations">
+                <ul style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Sr. Consultant Robotic Urologist</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Microsurgical Andrologist, Transplant Surgeon</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Laparoscopic & Robotic Minimally invasive Surgeon</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Fellow in MicroSurgical Andrologst, Cleveland Clinic(USA) centre</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Senior Consultant Gynaecologist, IVF & ICSI</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Fertility Specialist, Hysteroscopic & Laparoscopic Surgeon (Germany)</strong>
+                  </li>
+                  <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                    <i class="bi bi-check-circle-fill" style="position: absolute; left: 0; top: 5px; color: #3B82F6;"></i>
+                    <strong>Robotic Minimally invasive Surgeon</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="fellowships">
+              <h4 style="color: #1e3a8a; margin-bottom: 15px;">International Fellowships</h4>
+              <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 8px; color: #666;">• Fellow in Pr-Stacan nstite Y edical ScieSces Hyd.</li>
+                <li style="margin-bottom: 8px; color: #666;">• Professor, Shadan Institute / Ford Health System, Detroit(USA)</li>
+                <li style="margin-bottom: 8px; color: #666;">• Fellow in ART(USA), Cleveland Clinic, OHIO, USA</li>
+                <li style="margin-bottom: 8px; color: #666;">• Fellow, European HRE Society(London)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards Section for Dr. Sridevi -->
+      <div class="row">
+        <div class="col-lg-12" data-aos="zoom-in-left">
+          <div class="achievements-section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 20px; margin-top: 40px;">
+            <div class="mediket-section-title text-center mb-60">
+              <h4 style="color: #3B82F6; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Awards & Recognition</h4>
+              <h1 style="color: #1e3a8a; font-weight: 700; margin-bottom: 20px;">Dr. KAMMELA SRIDEVI's Achievements</h1>
+              <div style="width: 80px; height: 4px; background: linear-gradient(90deg, #3B82F6, #1e3a8a); margin: 0 auto; border-radius: 2px;"></div>
+            </div>
+
+            <div class="achievements-grid">
+              <div class="achievement-card" data-aos="fade-up" style="background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; position: relative; overflow: hidden; margin-bottom: 30px;">
+                <div class="achievement-content" style="display: flex; align-items: center; gap: 30px;">
+                  <div class="achievement-text" style="flex: 1;">
+                    <div class="award-badge" style="display: inline-block; background: linear-gradient(135deg, #3B82F6, #1e3a8a); color: white; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">
+                      Government Recognition
+                    </div>
+                    <h3 style="color: #1e3a8a; font-weight: 700; margin-bottom: 15px; font-family: 'Times New Roman', Times, serif;">Vaidya Ratna Purasakar</h3>
+                    <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin-bottom: 10px;">
+                      <strong style="color: #2d3748;">Awarded in 2014 by the Deputy Chief Minister of Telangana government.</strong>
+                    </p>
+                    <p style="color: #718096; font-size: 15px; line-height: 1.6;">
+                      Recognized for exceptional medical expertise as a Gynecologist, IVF/ICSI specialist, and Obstetrician, contributing significantly to women's healthcare in the region.
+                    </p>
+                    <div class="achievement-stats" style="margin-top: 20px; display: flex; gap: 20px;">
+                      <div style="text-align: center;">
+                        <div style="color: #3B82F6; font-size: 1.5rem; font-weight: 700;">2014</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">Year Awarded</div>
+                      </div>
+                      <div style="text-align: center;">
+                        <div style="color: #3B82F6; font-size: 1.5rem; font-weight: 700;">Gov.</div>
+                        <div style="color: #718096; font-size: 12px; text-transform: uppercase;">Authority</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(30, 58, 138, 0.1)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Dr. Kammela Sridevi Section -->
+  <!--========================================
+
+  <!--==================================================-->
+  <!-- Start Branches Section  -->
+  <!--==================================================-->
+  <div class="team-section style-2 style-3">
+    <div class="container">
+      <div class="row align-items-center mr-tb-50">
+        <div class="col-lg-12">
+          <div class="mediket-section-title home-2 text-center">
+            <h4>Meet Doctors</h4>
+            <h1> Our Branches</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="team-single-boxs" data-aos="fade-up">
+            <div class="team-thumbs">
+              <img src="assets/images/aboutimg/11052013800.jpg" alt="" />
+              <div class="social-icon">
+                <ul>
+                  <li><a href="team-details.html"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="team-details.html"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="team-details.html"><i class="fa-brands fa-behance"></i></a></li>
+                  <li><a href="team-details.html"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="team-content">
+              <h2>Mehadipatnam</h2>
+              <h5>Hyderabad</h5>
+              <div class="team-btn">
+                <a href="#"><i class="flaticon flaticon-right-arrow"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="team-single-boxs" data-aos="fade-up">
+            <div class="team-thumbs">
+              <img src="assets/images/" alt="" />
+              <div class="social-icon">
+                <ul>
+                  <li><a href="team-details.html"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="team-details.html"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="team-details.html"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="team-single-boxs" data-aos="fade-up">
+            <div class="team-thumbs">
+              <img src="assets/images/aboutimg/IMG_1051.JPG" alt="" />
+              <div class="social-icon">
+                <ul>
+                  <li><a href="team-details.html"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="team-details.html"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="team-details.html"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="team-content">
+              <h2>Gachibowli</h2>
+              <h5>Hyderabad</h5>
+              <div class="team-btn">
+                <a href="#"><i class="flaticon flaticon-right-arrow"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Branches Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start mediket Footer Section -->
+  <!--==================================================-->
+  <div class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer_widget_upper">
+            <div class="company-logo cursor-scale small">
+              <a href="index-2.html">
+                <h1 style="color: #ffffff; font-size: 2.5rem; font-weight: bold; margin: 0;">DR.SREEDHAR'S</h1>
+              </a>
+            </div>
+            <div class="footer_title">
+              <h2>Award Wining Medical</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="widget widgets-company-info" data-aos="zoom-in-right">
+            <h4 class="widget-title">About Us</h4>
+            <div class="company-info-desc">
+              <p>Completely e-enable covalent functionalities and medical positioning infomediarie interactively</p>
+            </div>
+            <div class="footer-mediket-contact">
+              <div class="mediket-info">
+                <h5>Mahedipatnam,Gachibowli<br>Hyderabad</h5>
+              </div>
+              <div class="mediket-info">
+                <h5>+91 90321 28645</h5>
+              </div>
+              <div class="mediket-info">
+                <h5>sreedhardrkammela@gmail.com</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="widget widget-nav-menu" data-aos="zoom-out">
+            <h4 class="widget-title">Navigation</h4>
+            <div class="menu-quick-link-content">
+              <ul class="footer-menu cursor-scale small">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="service.html"> Services </a></li>
+                <li><a href="about.html"> About Us </a></li>
+                <li><a href="gallery.html"> Gallery </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="mediket-address" data-aos="zoom-in-left">
+            <h4 class="widget-title">Subscribe Newsletter</h4>
+            <div class="footer_widget_anytime_alarm">
+              <div class="anytime_alarm">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <p>Signup our newsletter for lates updates from our medical anytime</p>
+            </div>
+            <form>
+              <div class="subscribe_form">
+                <input type="email" name="email" placeholder="sreedhardrkammela@gmail.com" />
+                <button type="submit" class="submits-btn">
+                  <i class="flaticon flaticon-right-arrow"></i>
+                </button>
+              </div>
+            </form>
+            <div class="mediket-social-icon cursor-scale small">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="foorer-shape">
+          <div class="footer-thumb1" data-aos="zoom-in-left">
+            <img src="assets/images/main-home/feathure-shapes.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row footer-btm d-flex align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="mediket-company-desc">
+            <p>Copyright © 2025 Dr.Sreedhar's</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="footer-bottom-menu text-right">
+            <ul>
+              <li><a href="#">FACEBOOK</a></li>
+              <li><a href="#">TWITTER</a></li>
+              <li><a href="#">INSTAGRAM</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Footer Section -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Sidebar Cart Item -->
+  <!--==================================================-->
+  <div class="xs-sidebar-group info-group">
+    <div class="xs-overlay xs-bg-black"></div>
+    <div class="xs-sidebar-widget">
+      <div class="sidebar-widget-container">
+        <div class="widget-heading">
+          <a href="#" class="close-side-widget">
+            <i class="far fa-times-circle"></i>
+          </a>
+        </div>
+        <div class="sidebar-textwidget">
+          <!-- Sidebar Info Content -->
+          <div class="sidebar-info-contents">
+            <div class="content-inner2">
+              <div class="nav-logo">
+                <a href="index.html">
+                  <h1 style="color: #ffffff; font-size: 1.5rem; font-weight: bold; margin: 0;">DR.SREEDHAR'S</h1>
+                </a>
+              </div>
+              <div class="row padding-two">
+                <div class="col-lg-6 padding-0 pl-0 pr-0">
+                  <div class="content-thumb-box">
+                    <img src="assets/images/resource/blog6.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6 padding-0 pl-0 pr-0">
+                  <div class="content-thumb-box">
+                    <img src="assets/images/resource/blog5.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6 padding-0 pl-0 pr-0">
+                  <div class="content-thumb-box">
+                    <img src="assets/images/resource/blog4.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-6 padding-0 pl-0 pr-0">
+                  <div class="content-thumb-box">
+                    <img src="assets/images/resource/blog3.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info">
+                <h2>Contact Info</h2>
+                <ul class="list-style-one">
+                  <li>
+                    <span><i class="bi bi-envelope"></i></span>Mahedipatnam,Gachibowli-Hyderabad
+                  </li>
+                  <li>
+                    <span><i class="bi bi-telephone-forward"></i></span>+91 9032128645
+                  </li>
+                  <li>
+                    <span><i class="bi bi-geo-alt"></i></span>sreedhardrkammela@gmail.com
+                  </li>
+                </ul>
+              </div>
+              <!-- Social Box -->
+              <ul class="social-box">
+                <li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+                <li class="twitter"><a href="#" class="fab fa-twitter"></a></li>
+                <li class="instagram"><a href="#" class="fab fa-instagram"></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/@dr.kammelasreedhar4605" class="fab fa-youtube"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Sidebar section Area -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- WhatsApp Chat Interface -->
+  <!--==================================================-->
+  <div class="whatsapp-float" id="whatsapp-chat">
+    <div class="whatsapp-button" onclick="toggleChatInterface(true)">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-tooltip">
+      <span>Chat with us!</span>
+    </div>
+  </div>
+
+  <!-- WhatsApp Chat Interface Popup -->
+  <div class="whatsapp-chat-interface" id="whatsapp-interface">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <img src="assets/images/logo3.png" alt="Dr. Sreedhar Hospital" class="chat-avatar">
+        <div class="chat-header-text">
+          <h4>Dr. Sreedhar Hospital</h4>
+          <span class="online-status">Online</span>
+        </div>
+      </div>
+      <button class="close-chat" onclick="closeChatInterface()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="chat-body">
+      <div class="chat-message bot-message">
+        <div class="message-avatar"><i class="fas fa-user-md"></i></div>
+        <div class="message-content">
+          <p>Hello! 👋 Welcome to Dr. Sreedhar Hospital!</p>
+          <p>How can I assist you today?</p>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+      <div class="quick-options">
+        <button class="quick-option" onclick="selectOption('appointment')">📅 Book Appointment</button>
+        <button class="quick-option" onclick="selectOption('services')">🏥 Our Services</button>
+        <button class="quick-option" onclick="selectOption('emergency')">🚨 Emergency</button>
+        <button class="quick-option" onclick="selectOption('contact')">📞 Contact Info</button>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <button class="whatsapp-redirect-btn" onclick="redirectToWhatsApp()">
+        <i class="fab fa-whatsapp"></i> Continue on WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Chat Interface Overlay -->
+  <div class="chat-overlay" id="chat-overlay" onclick="closeChatInterface()"></div>
+  <!--==================================================-->
+  <!-- End WhatsApp Chat Interface -->
+  <!--==================================================-->
+
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="venobox/venobox.js"></script>
+  <script src="venobox/venobox.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.js"></script>
+  <script src="assets/js/jquery.scrollUp.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/appear.js"></script>
+  <script src="assets/js/jquery.barfiller.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/my.js"></script>
+
+  <script>
+    // WhatsApp Chat Interface Functions
+    let selectedOption = '';
+
+    function toggleChatInterface(isManual = false) {
+      const chatInterface = document.getElementById('whatsapp-interface');
+      const overlay = document.getElementById('chat-overlay');
+
+      if (chatInterface.classList.contains('active')) {
+        closeChatInterface();
+      } else if (isManual) {
+        chatInterface.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeChatInterface() {
+      const chatInterface = document.getElementById('whatsapp-interface');
+      const overlay = document.getElementById('chat-overlay');
+
+      chatInterface.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    function selectOption(option) {
+      selectedOption = option;
+      const options = document.querySelectorAll('.quick-option');
+      options.forEach(opt => opt.classList.remove('selected'));
+
+      event.target.classList.add('selected');
+
+      // Add user message to chat
+      addUserMessage(event.target.textContent);
+
+      // Add bot response
+      setTimeout(() => {
+        addBotResponse(option);
+      }, 1000);
+    }
+
+    function addUserMessage(message) {
+      const chatBody = document.querySelector('.chat-body');
+      const userMessage = document.createElement('div');
+      userMessage.className = 'chat-message user-message';
+      userMessage.innerHTML = `
+            <div class="message-content">
+                <p>${message}</p>
+                <span class="message-time">Just now</span>
+            </div>
+        `;
+      chatBody.appendChild(userMessage);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function addBotResponse(option) {
+      const responses = {
+        'appointment': 'Great! I\'ll help you book an appointment. Please continue on WhatsApp to schedule your visit with our doctors.',
+        'services': 'We offer comprehensive medical services including cardiology, orthopedics, pediatrics, and emergency care. Let\'s discuss your specific needs on WhatsApp.',
+        'emergency': 'For medical emergencies, please call us immediately at +91 903 212 8645 or visit our emergency department. For non-urgent queries, continue on WhatsApp.',
+        'contact': 'You can reach us at +91 903 212 8645 or visit our hospital. Let\'s continue our conversation on WhatsApp for more details.'
+      };
+
+      const chatBody = document.querySelector('.chat-body');
+      const botMessage = document.createElement('div');
+      botMessage.className = 'chat-message bot-message';
+      botMessage.innerHTML = `
+            <div class="message-avatar">
+                <i class="fas fa-user-md"></i>
+            </div>
+            <div class="message-content">
+                <p>${responses[option]}</p>
+                <span class="message-time">Just now</span>
+            </div>
+        `;
+      chatBody.appendChild(botMessage);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function redirectToWhatsApp() {
+      if (selectedOption) {
+        if (selectedOption === 'appointment') {
+          // Redirect to contact page for appointments
+          window.location.href = 'contact.html';
+          return;
+        } else if (selectedOption === 'services') {
+          // Redirect to service page for services
+          window.location.href = 'service.html';
+          return;
+        }
+      }
+
+      // Default WhatsApp redirect for other options
+      const phoneNumber = '+919032128645';
+      let message = 'Hello! I would like to know more about Dr. Sreedhar\'s Hospital services.';
+
+      if (selectedOption) {
+        const optionMessages = {
+          'emergency': 'I need information about emergency services.',
+          'contact': 'I need your contact information and location details.'
+        };
+        message = `Hello! ${optionMessages[selectedOption] || message}`;
+      }
+
+      const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+      closeChatInterface();
+    }
+    // Ensure chat interface is closed on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      closeChatInterface();
+    });
+  </script>
+
+  <style>
+    /* WhatsApp Floating Button Styles */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      z-index: 9999;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      }
+      50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+      }
+      100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      }
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128c7e;
+      transform: scale(1.1);
+      animation: none;
+    }
+
+    .whatsapp-button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+    }
+
+    .whatsapp-tooltip {
+      position: absolute;
+      right: 70px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #333;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent transparent #333;
+    }
+
+    .whatsapp-float:hover .whatsapp-tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Chat Interface Overlay */
+    .chat-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .chat-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* WhatsApp Chat Interface */
+    .whatsapp-chat-interface {
+      position: fixed;
+      bottom: 120px;
+      right: 40px;
+      width: 350px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      z-index: 10000;
+      transform: translateY(100px) scale(0.8);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .whatsapp-chat-interface.active {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Chat Header */
+    .chat-header {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+
+    .chat-header-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .chat-avatar {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .chat-header-text h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .online-status {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .close-chat {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .close-chat:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Chat Body */
+    .chat-body {
+      overflow-y: auto;
+      padding: 20px;
+      background: #f0f2f5;
+      flex-grow: 1;
+    }
+
+    .chat-message {
+      margin-bottom: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .bot-message {
+      justify-content: flex-start;
+    }
+
+    .user-message {
+      justify-content: flex-end;
+    }
+
+    .message-avatar {
+      width: 35px;
+      height: 35px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .message-content {
+      background: white;
+      padding: 12px 16px;
+      border-radius: 18px;
+      max-width: 250px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-message .message-content {
+      background: #dcf8c6;
+    }
+
+    .message-content p {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      line-height: 1.4;
+      word-wrap: break-word;
+    }
+
+    .message-time {
+      font-size: 11px;
+      color: #666;
+      display: block;
+      text-align: right;
+    }
+
+    /* Quick Options */
+    .quick-options {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .quick-option {
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 12px 8px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .quick-option:hover {
+      border-color: #25d366;
+      background: #f0fff4;
+    }
+
+    .quick-option.selected {
+      background: #25d366;
+      color: white;
+      border-color: #25d366;
+    }
+
+    /* Chat Footer */
+    .chat-footer {
+      padding: 20px;
+      background: white;
+      border-top: 1px solid #e0e0e0;
+      flex-shrink: 0;
+    }
+
+    .whatsapp-redirect-btn {
+      width: 100%;
+      background: #25d366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-redirect-btn:hover {
+      background: #128c7e;
+    }
+
+    /* Scrollbar Styling */
+    .chat-body::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .chat-body::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    .chat-body::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    .chat-body::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
+  </style>
+
+</body>
+
+<!-- Mirrored from aonetheme.com/mediket/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 10:25:40 GMT -->
+
+</html>

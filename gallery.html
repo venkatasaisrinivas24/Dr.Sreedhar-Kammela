@@ -1,0 +1,1625 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gallery - Dr. Sreedhar's Multi Speciality Hospital</title>
+    <meta name="description" content="Achievements & Media Gallery of Dr. Kammela Sreedhar and Dr. Kammela Sridevi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <!-- carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all" />
+    <!-- font-awesome CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />
+    <!-- font-flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />
+    <!-- theme-default CSS -->
+    <link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />
+    <!-- meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
+    <!-- venobox CSS -->
+    <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all" />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- Gallery Custom CSS -->
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+
+    <script src="assets/js/swiper.min.js"></script>
+
+    <!-- modernizr js -->
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <!-- Internal CSS for the new Certificate Gallery -->
+    <style>
+/* --- Hero Section Main Styling --- */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* --- Background Image Carousel --- */
+.background-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+/* IMPORTANT: Replace with your own high-quality background images */
+.carousel-image.image1 { background-image: url('assets/images/hero/back11.png'); }
+.carousel-image.image2 { background-image: url('assets/images/hero/back44.png'); }
+.carousel-image.image3 { background-image: url('assets/images/hero/WhatsApp\ Image\ 2025-09-21\ at\ 15.54.34.jpeg'); }
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+/* Dark overlay for better text readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 25, 47, 0.7); /* Professional dark blue overlay */
+    z-index: -1;
+}
+
+/* --- Layout and Content Styling --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    z-index: 5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.col-lg-7, .col-lg-5, .col-md-12 {
+    padding: 15px;
+}
+
+.col-lg-7 { width: 58.33%; }
+.col-lg-5 { width: 41.67%; }
+
+/* --- Hero Content (Left Side) --- */
+.hero-content {
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content .subtitle {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgba(220, 234, 162, 0.1);
+    border: 1px solid rgba(220, 234, 162, 0.3);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #dceaa2;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.hero-content .description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
+/* --- Awards Section --- */
+.hero-awards-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.award-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.award-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.award-box .icon-wrapper {
+    font-size: 24px;
+    color: #dceaa2;
+    margin-right: 15px;
+}
+
+.award-box h4 { margin: 0; font-size: 18px; color: #fff; }
+.award-box span { font-size: 14px; color: #ccc; }
+
+/* --- Call-to-Action Button --- */
+.cta-button {
+    background-color: #dceaa2;
+    color: #1c3d5a;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/* --- Hero Visual (Right Side) --- */
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.hero-doctor-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    z-index: 2;
+}
+
+.animated-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(220, 234, 162, 0.1);
+    z-index: 1;
+    animation: breathe 4s ease-in-out infinite alternate;
+}
+
+.shape1 { width: 450px; height: 450px; }
+.shape2 { width: 500px; height: 500px; animation-delay: 1s; }
+
+@keyframes breathe {
+    from { transform: scale(0.95); }
+    to { transform: scale(1.05); }
+}
+
+/* --- Floating Info Cards --- */
+.info-card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    color: #1c3d5a;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: float 5s ease-in-out infinite alternate;
+    margin-top: -100px;
+}
+
+.info-card i { color: #4a90e2; }
+.card1 { top: 20%; left: -20px; }
+.card2 { bottom: 20%; right: -20px; animation-delay: 1.5s; margin-bottom: -100px; }
+
+@keyframes float {
+    from { transform: translateY(10px); }
+    to { transform: translateY(-10px); }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .hero-section {
+        height: auto;
+        min-height: auto;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col-lg-7, .col-lg-5 {
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-awards-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-doctor-image {
+        width: 300px;
+        height: 300px;
+    }
+    .shape1 { width: 350px; height: 350px; }
+    .shape2 { width: 400px; height: 400px; }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-content .description {
+        font-size: 16px;
+    }
+    .hero-doctor-image {
+        width: 250px;
+        height: 250px;
+    }
+    .info-card {
+        position: relative;
+        margin: 10px 0;
+    }
+    .card1, .card2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: 10px 0;
+    }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 991px) {
+    .col-lg-6 {
+        margin-bottom: 20px;
+    }
+    .video-container {
+        margin-top: 20px; /* Adds space between text and video on mobile */
+    }
+}
+
+        /* Add this CSS to your stylesheet */
+.additional-gallery-section {
+    padding: 40px 0;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image-placeholder {
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-image-placeholder img {
+    transform: scale(1.05);
+}
+
+.gallery-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    padding: 25px 15px 15px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-text h6 {
+    color: #fff;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* --- Mobile Responsive Adjustments --- */
+/* For tablets, items will be 2 per row */
+@media (max-width: 992px) {
+    .col-lg-4.col-md-6.mb-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* For mobile phones, items will be 1 per row */
+@media (max-width: 767px) {
+    .col-lg-4.col-md-6.mb-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .gallery-text h6 {
+        font-size: 0.9rem;
+    }
+}
+        .certificate-gallery-section {
+            padding: 40px 0;
+            background-color: #f8f9fa; /* A light background to differentiate the section */
+        }
+
+        .certificate-card {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        .certificate-title {
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-top: 15px;
+            font-size: 1rem; /* Responsive font size */
+        }
+
+        /* Media queries for adjusting column layout on different devices */
+        @media (max-width: 576px) {
+            .certificate-title {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- loder -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loder-section left-section"></div>
+        <div class="loder-section right-section"></div>
+    </div>
+
+    <!-- Curser Pointer -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!--==================================================-->
+    <!-- Start mediket Topber Area -->
+    <!--==================================================-->
+    <div class="topber_area">
+        <div class="container-fluid">
+            <div class="row topber_upper align-items-center d-flex">
+                <div class="col-lg-6">
+                    <div class="topber-text">
+                        <p><img src="assets/images/slider/top-shape.png" alt="">Welcome Dr. Sreedhar's Multi Speciality Hospital</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!--header top address-->
+                    <div class="header-address-info">
+                        <p><span><i class="fas fa-map-marker-alt"></i></span>Mehdipatnam & Gaddi Bowli Branch - Hyderabad<span class="right_info"><i class="bi bi-envelope"></i></span> sreedhardrkammela@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Topber Area -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start mediket Main Menu  -->
+    <!--==================================================-->
+    <div id="sticky-header" class="meedy_nav_manu style-3">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="logo cursor-scale small">
+                        <a class="logo_img" href="index.html" title="DR.SREEDHAR'S" style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+                            DR.SREEDHAR'S
+                        </a>
+                        <a class="main_sticky" href="index.html" title="DR.SREEDHAR'S" style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+                            DR.SREEDHAR'S
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <nav class="meedy_menu">
+                        <ul class="nav_scroll">
+                            <li>
+                                <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+                            </li>
+                            <li>
+                                <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a class="mdy-hover cursor-scale small" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="mediket-right-side cursor-scale small">
+                            <!-- header button -->
+                            <div class="header-button">
+                                <a href="contact.html">
+                                    Book an Appointment
+                                    <div class="mediket-hover-btn hover-btn"></div>
+                                    <div class="mediket-hover-btn hover-btn2"></div>
+                                    <div class="mediket-hover-btn hover-btn3"></div>
+                                    <div class="mediket-hover-btn hover-btn4"></div>
+                                </a>
+                            </div>
+                            <div class="sidebar">
+                                <div class="nav-btn navSidebar-button">
+                                    <span><i class="fas fa-align-left"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mediket Mobile Menu  -->
+    <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+        <div class="mobile-menu">
+            <nav class="meedy_menu">
+                <ul class="nav_scroll">
+                    <li>
+                        <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="mdy-hover cursor-scale small" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Main Menu  -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start mediket Breatcome Section  -->
+    <!--==================================================-->
+    <div class="breatcome-section d-flex align-items-center" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/gallery/gallery.jpg'); background-size: cover; background-position: center; min-height: 350px; position: relative;">
+
+        <!-- Social Icons - Left Side -->
+        <div style="position: absolute; left: 40px; top: 50%; transform: translateY(-50%); z-index: 10;">
+            <div style="writing-mode: vertical-rl; text-orientation: mixed; margin-bottom: 40px;">
+                <span style="color: #ffffff; font-size: 12px; font-weight: 400; letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">FOLLOW US</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <a href="#" style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container" style="position: relative; z-index: 5;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 style="color: #ffffff; font-size: 3.5rem; font-weight: 700; margin-bottom: 25px; font-family: 'Clash Display', sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Gallery</h1>
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <a href="index.html" style="color: #60A5FA; text-decoration: none; font-weight: 500; font-size: 16px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Home</a>
+                            <span style="color: #ffffff; margin: 0 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">></span>
+                            <span style="color: #ffffff; font-weight: 500; font-size: 16px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Gallery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Circle -->
+        <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 12px; height: 12px; border: 2px solid rgba(255,255,255,0.4); border-radius: 50%; z-index: 3;"></div>
+    </div>
+    <!--==================================================-->
+    <!-- End mediket Breatcome Section  -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start Gallery Main Section  -->
+    <!--==================================================-->
+    <div class="gallery-main-section" style="padding: 80px 0; background: #ffffff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mediket-section-title text-center mb-60">
+                        <h4 style="color: #3B82F6;">Achievements & Media</h4>
+                        <h1 style="color: #1e3a8a;">Our Medical Excellence Gallery</h1>
+                        <p>Showcasing our doctors' achievements, media appearances, and medical milestones</p>
+                    </div>
+                </div>
+            </div>
+
+     
+            <!-- Dr. Kammela Sreedhar Section -->
+            <div class="row mb-80">
+                <div class="col-lg-12">
+                    <div class="doctor-gallery-section">
+                        <div class="doctor-title-section text-center mb-50">
+                            <h2 style="color: #1e3a8a; margin-bottom: 10px;">PHOTO OF DR. KAMMELA SREEDHAR'S</h2>
+                            <h3 style="color: #E91E63; font-size: 1.5rem;">Achievements</h3>
+                        </div>
+
+                        <!-- Achievements Content -->
+                        <div class="achievements-content mb-50">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="achievement-image-placeholder gallery-item" data-category="achievements">
+                                        <img src="assets/images/doctor/Phadke award_imresizer.jpg" alt="Dr. Sreedhar's Achievement Photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px; cursor: pointer;" onclick="openLightbox('dr-sreedhar-1')">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="achievement-details">
+                                        <h4 style="color: #1e3a8a; margin-bottom: 20px;">Dr. KAMMELA SREEDHAR'S</h4>
+                                        <div class="achievement-text" style="background: #f8f9fa; padding: 30px; border-radius: 10px;">
+                                            <p style="font-size: 16px; line-height: 1.8; color: #333; margin-bottom: 20px;">
+                                                <strong>Urology career:</strong> Performed more than 56,000 endo-urological & Laparoscopic, LASER Stone removal procedures, successfully executed more than 635 kidney transplants, performed more than 9,500 infertility micro-surgeries, more than 700 penile implantation procedures till date.
+                                            </p>
+                                            <p style="font-size: 16px; line-height: 1.8; color: #333; margin: 0;">
+                                                <strong>World's Largest Urethral diverticular Stone</strong> Removed by me, published in 'Urologia Internationalis, 1992:48: p.117-119'
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- START: New Certificates Section -->
+                        <div class="certificate-gallery-section">
+                            <div class="container">
+                                <div class="doctor-title-section text-center mb-50">
+                                    <h3 style="color: #1e3a8a; font-size: 2rem;">Certificates & Awards</h3>
+                                </div>
+                                <div class="row">
+                                    <!-- Certificate 1 -->
+                                    
+                                   
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/Unique World record.jpg" alt="Unique World Record">
+                                            <p class="certificate-title">Unique World Record</p>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/asia cm 2.jpg" alt="Asia CM">
+                                            <p class="certificate-title">Asia CM 2</p>
+                                        </div>
+                                    </div>
+                                    <!-- Certificate 2 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/Asia Book of Records.jpg" alt="Asia Book of Records">
+                                            <p class="certificate-title">Asia Book of Records</p>
+                                        </div>
+
+                                    </div>
+                                     
+                                     <!-- Certificate 4 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/India column original.jpg" alt="India Column Original">
+                                            <p class="certificate-title">India Column Original</p>
+                                        </div>
+                                    </div>
+                                     <!-- Certificate 5 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/Kammela, Most Telugu TV,1619.jpg" alt="Most Telugu TV">
+                                            <p class="certificate-title">Most Telugu TV Appearances</p>
+                                        </div>
+                                    </div>
+                                    <!-- Certificate 6 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/Miracle World Records.jpg" alt="Miracle World Records">
+                                            <p class="certificate-title">Miracle World Records</p>
+                                        </div>
+                                    </div>
+                                    <!-- Certificate 7 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/most.jpg" alt="Most Medical Program Episodes">
+                                            <p class="certificate-title">Most Medical Program Episodes</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Certificate 9 -->
+                                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/phadke certificate.jpg" alt="Phadke Certificate">
+                                            <p class="certificate-title">Phadke Certificate</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Certificate 11 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/rhrindianrecords.jpg" alt="RHR Indian Records">
+                                            <p class="certificate-title">RHR Indian Records</p>
+                                        </div>
+                                    </div>
+                                    <!-- Certificate 12 -->
+                                    
+                                     <!-- Certificate 13 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/UniqueWorld records.jpg" alt="UniqueWorld Records">
+                                            <p class="certificate-title">Unique World Records</p>
+                                        </div>
+                                    </div>
+                                     <!-- Certificate 14 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/Wonder Record Holders India.jpg" alt="Wonder Record Holders India">
+                                            <p class="certificate-title">Wonder Record Holders India</p>
+                                        </div>
+                                    </div>
+                                     <!-- Certificate 15 -->
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="certificate-card">
+                                            <img src="assets/images/gallery/world Amazing 1012 tv.jpg" alt="World Amazing TV">
+                                            <p class="certificate-title">World Amazing 1012 TV</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: New Certificates Section -->
+
+                        <!-- Media Section for Dr. Sreedhar -->
+ <div class="media-section mb-50">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="media-content" style="background: linear-gradient(135deg, #1E88E5, #1976D2); padding: 40px; border-radius: 15px; color: white;">
+                <h4 style="color: white; text-align: center; margin-bottom: 30px;">Media</h4>
+                <div class="row align-items-center">
+                    <!-- Left Column for Text Content -->
+                    <div class="col-lg-6">
+                        <div class="media-item mb-4">
+                            <p style="font-size: 16px; margin: 0;">
+                                <strong>TV Prog.:</strong> Dr. Kammela Sreedhar in TV 5 Live 10:30pm to 11:00pm Every Sunday in Sparsha Prog.
+                            </p>
+                        </div>
+                        <div class="media-item">
+                            <p style="font-size: 16px; margin: 0;">
+                                <strong>'CVR Health':</strong> 9:00pm to 9:30pm Live daily in Madhura Kshanam Prog.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Right Column for Video -->
+                    <div class="col-lg-6">
+                        <div class="video-container">
+                            <video controls poster="" style="width:100%; height:100%; border-radius: 10px;">
+                                <source src="assets/images/gallery/JORUGA HUSHARUGA Promo tv1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Dr. Kammela Sridevi Section -->
+            <div class="row mb-80">
+                <div class="col-lg-12">
+                    <div class="doctor-gallery-section">
+                        <div class="doctor-title-section text-center mb-50">
+                            <h2 style="color: #1e3a8a; margin-bottom: 10px;">PHOTO OF DR. KAMMELA SRIDEVI'S</h2>
+                            <h3 style="color: #E91E63; font-size: 1.5rem;">Achievements</h3>
+                        </div>
+
+                        <!-- Achievements Content -->
+                        <div class="achievements-content mb-50">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <div class="achievement-details">
+                                        <div class="achievement-text" style="background: #f8f9fa; padding: 30px; border-radius: 10px;">
+                                            <p style="font-size: 16px; line-height: 1.8; color: #333; margin-bottom: 20px;">
+                                                Dr. Kammela Sridevi's key achievements include extensive training in advanced Infertility and IVF procedures at the prestigious Cleveland Clinic, USA, and under world-renowned specialists. She received the <strong style="color: #E91E63;">Vaidya Ratna Purasakar award in 2014</strong> for her contributions to medicine.
+                                            </p>
+                                            <p style="font-size: 16px; line-height: 1.8; color: #333; margin: 0;">
+                                                Dr. Sridevi also holds a significant achievement in public health communication, writing medical columns in newspapers and appearing on live television programs to provide expert medical advice on infertility and gynecological issues.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="achievement-image-placeholder gallery-item" data-category="achievements awards">
+                                        <img src="assets/images/gallery/Dr.Sridevi Award -Dr.Peter Nagi.jpg" alt="Dr. Sridevi's Achievement Photo" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; cursor: pointer;" onclick="openLightbox('dr-sridevi-1')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Media Section for Dr. Sridevi -->
+                        <div class="media-section mb-50">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="media-content" style="background: linear-gradient(135deg, #E91E63, #C2185B); padding: 40px; border-radius: 15px; color: white;">
+                                        <h4 style="color: white; text-align: center; margin-bottom: 30px;">Media</h4>
+                                        <div class="text-center">
+                                            <div class="media-item gallery-item" data-category="media tv-programs">
+                                                <p style="font-size: 16px; margin: 0;">
+                                                    <strong>Dr.(Mrs) Kammela Sridevi (IVF & ICSI Specialist):</strong> CVR Health Live 9:00 to 9:30pm Every Wednesday & Saturday.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Gallery Grid -->
+            <div class="row">
+    <div class="row">
+    <div class="col-lg-12">
+        <div class="additional-gallery-section">
+            <h3 style="color: #1e3a8a; text-align: center; margin-bottom: 40px;">Hospital Gallery</h3>
+            <div class="row">
+                <!-- Row 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <div class="gallery-image-placeholder" onclick="openLightbox('hospital-1')">
+                            <img src="assets/images/gallery/3.JPG" alt="Hospital Facilities">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <div class="gallery-image-placeholder" onclick="openLightbox('hospital-2')">
+                            <img src="assets/images/gallery/4.JPG" alt="Medical Team">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <div class="gallery-image-placeholder" onclick="openLightbox('awards-1')">
+                            <img src="assets/images/gallery/5.JPG" alt="Awards & Recognition">
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <div class="gallery-image-placeholder" onclick="openLightbox('hospital-3')">
+                            <img src="assets/images/gallery/6.JPG" alt="Advanced Technology">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <div class="gallery-image-placeholder" onclick="openLightbox('hospital-4')">
+                            <img src="assets/images/gallery/7.JPG" alt="Patient Care">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <div class="gallery-image-placeholder" onclick="openLightbox('community-1')">
+                            <img src="assets/images/gallery/New Image.JPG" alt="Community Outreach">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+    <!--==================================================-->
+    <!-- End Gallery Main Section  -->
+    <!--==================================================-->
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="Gallery Image">
+            <div id="lightbox-caption"></div>
+        </div>
+    </div>
+
+
+    <!--==================================================-->
+    <!-- Sidebar Cart Item -->
+    <!--==================================================-->
+  <div class="xs-sidebar-group info-group">
+          <div class="xs-overlay xs-bg-black"></div>
+          <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+              <div class="widget-heading">
+                <a href="#" class="close-side-widget">
+                  <i class="far fa-times-circle"></i>
+                </a>
+              </div>
+              <div class="sidebar-textwidget">
+                <!-- Sidebar Info Content -->
+                <div class="sidebar-info-contents">
+                  <div class="content-inner2">
+                    <div class="nav-logo">
+                      <a href="index.html"
+                        ><h1 style="color: #ffffff; font-size: 1.5rem; font-weight: bold; margin: 0;">DR.SREEDHAR'S</h1>
+                      </a>
+                    </div>
+                    <div class="row padding-two">
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog6.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog5.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog4.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 padding-0 pl-0 pr-0">
+                        <div class="content-thumb-box">
+                          <img src="assets/images/resource/blog3.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact-info">
+                      <h2>Contact Info</h2>
+                      <ul class="list-style-one">
+                        <li>
+                          <span><i class="bi bi-envelope"></i></span>Mahedipatnam,Gachibowli-Hyderabad                        </li>
+                        <li>
+                          <span><i class="bi bi-telephone-forward"></i></span
+                          >+91 9032128645
+                        </li>
+                        <li>
+                          <span><i class="bi bi-geo-alt"></i></span>sreedhardrkammela@gmail.com
+                        </li>
+                        
+                      </ul>
+                    </div>
+                    <!-- Social Box -->
+                    <ul class="social-box">
+                      <li class="facebook">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                      </li>
+                      <li class="twitter">
+                        <a href="#" class="fab fa-twitter"></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#" class="fab fa-instagram"></a>
+                      </li>
+                      <li class="youtube">
+                        <a href="https://www.youtube.com/@dr.kammelasreedhar4605" class="fab fa-youtube"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!--==================================================-->
+    <!-- End Sidebar Cart Item -->
+    <!--==================================================-->
+
+    <!--==================================================-->
+    <!-- Start scrollup section Area -->
+    <!--==================================================-->
+    <div id="progress" class="progress hide">
+        <svg class="progress-svg" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="m50,1a49,49 0 0,1 0,98a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!--==================================================-->
+    <!-- End scrollup section Area -->
+    <!--==================================================-->
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" onclick="toggleChatInterface(true)">
+        <div class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+    </div>
+
+    <!-- Chat Overlay -->
+    <div class="chat-overlay" id="chat-overlay" onclick="closeChatInterface()"></div>
+
+    <!-- WhatsApp Chat Interface -->
+    <div class="whatsapp-chat-interface" id="whatsapp-interface">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img src="assets/images/logo/logo.png" alt="Dr. Sreedhar's Hospital" class="chat-avatar">
+                <div class="chat-header-text">
+                    <h4>Dr. Sreedhar's Hospital</h4>
+                    <span class="online-status">Online now</span>
+                </div>
+            </div>
+            <button class="close-chat" onclick="closeChatInterface()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="chat-message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! Welcome to Dr. Sreedhar's Hospital. How can I help you today?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            
+            <div class="quick-options">
+                <div class="quick-option" onclick="selectOption('appointment')">
+                    <i class="fas fa-calendar-check"></i><br>
+                    Book Appointment
+                </div>
+                <div class="quick-option" onclick="selectOption('services')">
+                    <i class="fas fa-stethoscope"></i><br>
+                    Our Services
+                </div>
+                <div class="quick-option" onclick="selectOption('emergency')">
+                    <i class="fas fa-ambulance"></i><br>
+                    Emergency
+                </div>
+                <div class="quick-option" onclick="selectOption('contact')">
+                    <i class="fas fa-phone"></i><br>
+                    Contact Info
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="whatsapp-redirect-btn" onclick="redirectToWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                Continue on WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // WhatsApp Chat Interface Functions
+        let selectedOption = '';
+
+        function toggleChatInterface(isManual = false) {
+            const chatInterface = document.getElementById('whatsapp-interface');
+            const overlay = document.getElementById('chat-overlay');
+            
+            if (chatInterface.classList.contains('active')) {
+                closeChatInterface();
+            } else if (isManual) { // Only open if manually triggered
+                chatInterface.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeChatInterface() {
+            const chatInterface = document.getElementById('whatsapp-interface');
+            const overlay = document.getElementById('chat-overlay');
+            
+            chatInterface.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function selectOption(option) {
+            selectedOption = option;
+            const options = document.querySelectorAll('.quick-option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            
+            event.target.classList.add('selected');
+            
+            // Add user message to chat
+            addUserMessage(event.target.textContent);
+            
+            // Add bot response
+            setTimeout(() => {
+                addBotResponse(option);
+            }, 1000);
+        }
+
+        function addUserMessage(message) {
+            const chatBody = document.querySelector('.chat-body');
+            const userMessage = document.createElement('div');
+            userMessage.className = 'chat-message user-message';
+            userMessage.innerHTML = `
+                <div class="message-content">
+                    <p>${message}</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            `;
+            chatBody.appendChild(userMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function addBotResponse(option) {
+            const responses = {
+                'appointment': 'Great! I\'ll help you book an appointment. Please continue on WhatsApp to schedule your visit with our doctors.',
+                'services': 'We offer comprehensive medical services including cardiology, orthopedics, pediatrics, and emergency care. Let\'s discuss your specific needs on WhatsApp.',
+                'emergency': 'For medical emergencies, please call us immediately at +91 903 212 8645 or visit our emergency department. For non-urgent queries, continue on WhatsApp.',
+                'contact': 'You can reach us at +91 903 212 8645 or visit our hospital. Let\'s continue our conversation on WhatsApp for more details.'
+            };
+
+            const chatBody = document.querySelector('.chat-body');
+            const botMessage = document.createElement('div');
+            botMessage.className = 'chat-message bot-message';
+            botMessage.innerHTML = `
+                <div class="message-avatar">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="message-content">
+                    <p>${responses[option]}</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            `;
+            chatBody.appendChild(botMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function redirectToWhatsApp() {
+            if (selectedOption) {
+                if (selectedOption === 'appointment') {
+                    // Redirect to contact page for appointments
+                    window.location.href = 'contact.html';
+                    return;
+                } else if (selectedOption === 'services') {
+                    // Redirect to service page for services
+                    window.location.href = 'service.html';
+                    return;
+                }
+            }
+            
+            // Default WhatsApp redirect for other options
+            const phoneNumber = '+919032128645';
+            let message = 'Hello! I would like to know more about Dr. Sreedhar\'s Hospital services.';
+            
+            if (selectedOption) {
+                const optionMessages = {
+                    'emergency': 'I need information about emergency services.',
+                    'contact': 'I need your contact information and location details.'
+                };
+                message = `Hello! ${optionMessages[selectedOption] || message}`;
+            }
+            
+            const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+            closeChatInterface();
+        }
+    </script>
+
+    <style>
+        /* WhatsApp Floating Button Styles */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+            }
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+            animation: none;
+        }
+
+        .whatsapp-button {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent #333;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Chat Interface Overlay */
+        .chat-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .chat-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* WhatsApp Chat Interface */
+        .whatsapp-chat-interface {
+            position: fixed;
+            bottom: 120px;
+            right: 40px;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            z-index: 10000;
+            transform: translateY(100px) scale(0.8);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            overflow: hidden;
+        }
+
+        .whatsapp-chat-interface.active {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Chat Header */
+        .chat-header {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-header-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .chat-header-text h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .online-status {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .close-chat {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-chat:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Chat Body */
+        .chat-body {
+            height: 320px;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+
+        .chat-message {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .bot-message {
+            justify-content: flex-start;
+        }
+
+        .user-message {
+            justify-content: flex-end;
+        }
+
+        .message-avatar {
+            width: 35px;
+            height: 35px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .message-content {
+            background: white;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-message .message-content {
+            background: #dcf8c6;
+        }
+
+        .message-content p {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .message-time {
+            font-size: 11px;
+            color: #666;
+            display: block;
+            text-align: right;
+        }
+
+        /* Quick Options */
+        .quick-options {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .quick-option {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 12px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .quick-option:hover {
+            border-color: #25d366;
+            background: #f0fff4;
+        }
+
+        .quick-option.selected {
+            background: #25d366;
+            color: white;
+            border-color: #25d366;
+        }
+
+        /* Chat Footer */
+        .chat-footer {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .whatsapp-redirect-btn {
+            width: 100%;
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-redirect-btn:hover {
+            background: #128c7e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+            
+            .whatsapp-tooltip {
+                font-size: 12px;
+                padding: 6px 10px;
+                right: 60px;
+            }
+
+            .whatsapp-chat-interface {
+                width: 90%;
+                right: 5%;
+                bottom: 90px;
+                height: 450px;
+            }
+
+            .quick-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer width fix - Make footer full width like other pages */
+         .footer-section {
+             width: 100% !important;
+             max-width: 100% !important;
+             padding-left: 0 !important;
+             padding-right: 0 !important;
+         }
+         
+         .footer-section .container {
+             width: 100% !important;
+             max-width: 100% !important;
+             margin: 0 !important;
+             padding-left: 50px !important;
+             padding-right: 50px !important;
+         }
+         
+         /* Ensure footer background extends full width */
+         .footer-section::before {
+             width: 100% !important;
+             left: 0 !important;
+         }
+         
+         /* Remove any container constraints */
+         .footer-section .row {
+             margin-left: 0 !important;
+             margin-right: 0 !important;
+         }
+    </style>
+   
+    <script src="assets/js/aos.js"></script>
+
+    <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+
+    <script src="assets/js/odometer.min.js"></script>
+
+    <script src="assets/js/gsap.min.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <script src="venobox/venobox.js"></script>
+
+    <script src="venobox/venobox.min.js"></script>
+
+    <script src="assets/js/jquery.meanmenu.js"></script>
+
+    <script src="assets/js/jquery.scrollUp.js"></script>
+    
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/appear.js"></script>
+
+    <script src="assets/js/jquery.barfiller.js"></script>
+
+    <script src="assets/js/swiper.min.js"></script>
+
+    <script src="assets/js/theme.js"></script>
+
+    <script src="assets/js/my.js"></script> 
+
+    <!-- Hero Section Background Carousel Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.carousel-image');
+            let currentIndex = 0;
+
+            function showNextImage() {
+                // Remove active class from current image
+                images[currentIndex].classList.remove('active');
+                
+                // Move to next image (loop back to 0 if at end)
+                currentIndex = (currentIndex + 1) % images.length;
+                
+                // Add active class to new current image
+                images[currentIndex].classList.add('active');
+            }
+
+            // Change image every 4 seconds
+            setInterval(showNextImage, 4000);
+        });
+    </script>
+  </body>
+
+</html>

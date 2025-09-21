@@ -1,0 +1,3028 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from aonetheme.com/mediket/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 10:25:35 GMT -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Dr.Sreedhar's Hospital and Doctors Appoinment Services</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+  <!-- carousel CSS -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all" />
+  <!-- font-awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />
+  <!-- font-flaticon CSS -->
+  <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />
+  <!-- theme-default CSS -->
+  <link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />
+  <!-- meanmenu CSS -->
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
+  <!-- venobox CSS -->
+  <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all" />
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all" />
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+  <!-- responsive CSS -->
+  <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+  <!-- Card size reduction CSS -->
+  <link rel="stylesheet" href="assets/css/card-size-reduction.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+
+  <script src="assets/js/swiper.min.js"></script>
+
+  <!-- modernizr js -->
+  <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <Style>
+    /* Hero Section Styles */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    }
+
+    .background-carousel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .carousel-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carousel-image.active {
+      opacity: 1;
+    }
+
+    .carousel-image.image1 {
+      background-image: url('assets/images/main-home/about_bg.jpg');
+    }
+
+    .carousel-image.image2 {
+      background-image: url('assets/images/main-home/service_bg.jpg');
+    }
+
+    .carousel-image.image3 {
+      background-image: url('assets/images/main-home/hero_bg.jpg');
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(30, 58, 138, 0.8);
+      z-index: 2;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero-content {
+      color: white;
+      max-width: 600px;
+    }
+
+    .hero-content .subtitle {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.2);
+      color: #60a5fa;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .hero-content .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+
+    .hero-awards-container {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .award-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .award-box .icon-wrapper {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+    }
+
+    .award-box h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .award-box span {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      color: white;
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero-visual {
+      position: relative;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .animated-shape {
+      position: absolute;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.2), rgba(59, 130, 246, 0.1));
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .shape1 {
+      width: 200px;
+      height: 200px;
+      top: 10%;
+      right: 10%;
+      animation-delay: 0s;
+    }
+
+    .shape2 {
+      width: 150px;
+      height: 150px;
+      bottom: 20%;
+      left: 10%;
+      animation-delay: 3s;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(180deg);
+      }
+    }
+
+    .hero-doctor-image {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 2;
+    }
+
+    .info-card {
+      position: absolute;
+      background: white;
+      padding: 15px 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: bounce 3s ease-in-out infinite;
+    }
+
+    .card1 {
+      top: 15%;
+      left: -10%;
+      animation-delay: 0s;
+    }
+
+    .card2 {
+      bottom: 15%;
+      right: -10%;
+      animation-delay: 1.5s;
+    }
+
+    .info-card i {
+      font-size: 20px;
+      color: #3b82f6;
+    }
+
+    .info-card span {
+      font-weight: 600;
+      color: #1e3a8a;
+      font-size: 14px;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 991px) {
+      .hero-section {
+        height: auto;
+        padding: 80px 0;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-awards-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .hero-doctor-image {
+        width: 300px;
+        height: 300px;
+      }
+
+      .hero-visual {
+        height: 400px;
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-doctor-image {
+        width: 250px;
+        height: 250px;
+      }
+
+      .info-card {
+        position: relative;
+        margin: 10px 0;
+      }
+
+      .card1,
+      .card2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+      }
+    }
+
+    /* Professional Services Section Styles */
+    .services-overview-section {
+      position: relative;
+    }
+
+    .section-header {
+      margin-bottom: 4rem;
+    }
+
+    .section-subtitle {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      padding: 8px 24px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 20px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .section-description {
+      font-size: 1.1rem;
+      color: #64748b;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      border: 1px solid #e2e8f0;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-image {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover .service-image img {
+      transform: scale(1.1);
+    }
+
+    .service-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(29, 78, 216, 0.8));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-card:hover .service-overlay {
+      opacity: 1;
+    }
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #3b82f6;
+      transform: scale(0);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover .service-icon {
+      transform: scale(1);
+    }
+
+    .service-content {
+      padding: 30px;
+    }
+
+    .service-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 15px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .service-description {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 25px;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #475569;
+    }
+
+    .service-features li i {
+      color: #10b981;
+      margin-right: 10px;
+      font-size: 12px;
+    }
+
+    .service-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .service-btn:hover {
+      background: linear-gradient(135deg, #1d4ed8, #1e40af);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Responsive Design for Services */
+    @media (max-width: 991px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .service-image {
+        height: 220px;
+      }
+
+      .service-content {
+        padding: 25px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .services-overview-section {
+        padding: 60px 0;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .section-description {
+        font-size: 1rem;
+      }
+
+      .service-image {
+        height: 200px;
+      }
+
+      .service-content {
+        padding: 20px;
+      }
+
+      .service-title {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* Why Choose Us Section Styles */
+    .section-subtitle-white {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      color: #60a5fa;
+      padding: 8px 24px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .section-title-white {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 20px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .section-description-white {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-10px);
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      font-size: 32px;
+      color: white;
+    }
+
+    .feature-content h4 {
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .feature-content p {
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Detailed Services Section Styles */
+    .service-detail-block {
+      margin-bottom: 100px;
+    }
+
+    .service-detail-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .service-category {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .service-detail-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 20px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .service-detail-description {
+      font-size: 1.1rem;
+      color: #64748b;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .service-highlights {
+      margin-bottom: 40px;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+
+    .highlight-item i {
+      color: #10b981;
+      font-size: 20px;
+      margin-right: 15px;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+
+    .highlight-item h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 5px;
+    }
+
+    .highlight-item p {
+      color: #64748b;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .detail-cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .detail-cta-btn:hover {
+      background: linear-gradient(135deg, #1d4ed8, #1e40af);
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+
+    .service-detail-image {
+      position: relative;
+    }
+
+    .service-detail-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design for New Sections */
+    @media (max-width: 991px) {
+      .section-title-white {
+        font-size: 2rem;
+      }
+
+      .service-detail-title {
+        font-size: 1.8rem;
+      }
+
+      .feature-card {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+      }
+
+      .service-detail-block {
+        margin-bottom: 60px;
+      }
+
+      .service-detail-image img {
+        height: 300px;
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .section-title-white {
+        font-size: 1.8rem;
+      }
+
+      .section-description-white {
+        font-size: 1rem;
+      }
+
+      .service-detail-title {
+        font-size: 1.6rem;
+      }
+
+      .service-detail-description {
+        font-size: 1rem;
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+
+      .feature-content h4 {
+        font-size: 1.1rem;
+      }
+
+      .highlight-item {
+        margin-bottom: 20px;
+      }
+
+      .service-detail-image img {
+        height: 250px;
+      }
+    }
+
+    /* Statistics Section Styles */
+    .stat-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      border: 1px solid #e2e8f0;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    .stat-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      font-size: 32px;
+      color: white;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 10px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .stat-label {
+      color: #64748b;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    /* Call to Action Section Styles */
+    .cta-subtitle {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      color: #60a5fa;
+      padding: 8px 24px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .cta-title {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 25px;
+      font-family: 'Clash Display', sans-serif;
+    }
+
+    .cta-description {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .cta-btn.primary {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+    }
+
+    .cta-btn.primary:hover {
+      background: linear-gradient(135deg, #1d4ed8, #1e40af);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    .cta-btn.secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .cta-btn.secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.5);
+      transform: translateY(-3px);
+      color: white;
+      text-decoration: none;
+    }
+
+    .cta-contact-info {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
+    .contact-item i {
+      color: #60a5fa;
+      font-size: 16px;
+    }
+
+    /* Responsive Design for Statistics and CTA */
+    @media (max-width: 991px) {
+      .stat-card {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+      }
+
+      .cta-title {
+        font-size: 2.2rem;
+      }
+
+      .cta-description {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .stat-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+
+      .stat-number {
+        font-size: 1.8rem;
+      }
+
+      .stat-label {
+        font-size: 1rem;
+      }
+
+      .cta-title {
+        font-size: 1.8rem;
+      }
+
+      .cta-description {
+        font-size: 1rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+
+      .cta-contact-info {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    /* Column base styles */
+    .col-lg-4,
+    .col-lg-6,
+    .col-lg-8 {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    /* Large screen column definitions (desktops) */
+    @media (min-width: 992px) {
+      .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
+
+      .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .col-lg-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+      }
+    }
+
+    /* Section Specific Styles */
+    .about-section {
+      background-color: #f8f9fa;
+      padding: 80px 0;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    .mediket-section-title h4 {
+      color: #0d6efd;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .mediket-section-title h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .about-shape {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .about-shape img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .mediket-btn a {
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #0d6efd;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .mediket-btn a:hover {
+      background-color: #0b5ed7;
+    }
+
+    .about_qute {
+      font-style: italic;
+      color: #6c757d;
+      border-left: 3px solid #0d6efd;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .about-service-list ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    .about-service-list li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+
+    .about-service-list li::before {
+      content: '✓';
+      /* Using a simple checkmark */
+      color: #0d6efd;
+      margin-right: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .mediket-author {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .author-img {
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .author-img img {
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      object-fit: cover;
+    }
+
+    .author-bio h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .author-bio span {
+      color: #6c757d;
+      font-size: 1rem;
+    }
+
+    .about-thumb {
+      height: 100%;
+      width: 100%;
+    }
+
+    .about-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Responsive adjustments for tablets and mobile devices */
+    @media (max-width: 991.98px) {
+      .about-section {
+        padding: 40px 0;
+      }
+
+      .row {
+        flex-direction: column;
+        /* Stack columns vertically */
+      }
+
+      /* Make columns full width on smaller screens */
+      .col-lg-4,
+      .col-lg-6,
+      .col-lg-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        /* Add space between stacked items */
+      }
+
+      .mediket-section-title h1 {
+        font-size: 2rem;
+        /* Reduce heading size */
+      }
+
+      .about-thumb {
+        /* Give the last image a max-height to avoid it being excessively tall */
+        max-height: 400px;
+      }
+
+      .mediket-section-title,
+      .about_list_item {
+        text-align: center;
+        /* Center text for a cleaner look */
+      }
+
+      .about_qute {
+        text-align: left;
+      }
+
+      .about-service-list ul {
+        display: inline-block;
+        /* Center the list items */
+        text-align: left;
+      }
+
+      .mediket-author {
+        justify-content: center;
+        /* Center the author bio block */
+      }
+    }
+
+    /* Hero Section Animations */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(180deg);
+      }
+    }
+
+    /* Professional Hero Section Styles */
+    .professional-hero-section a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .professional-hero-section a[href="#services"]:hover {
+      background: linear-gradient(135deg, #1d4ed8, #1e40af) !important;
+    }
+
+    .professional-hero-section a[href="contact.html"]:hover {
+      background: rgba(255, 255, 255, 0.1) !important;
+      border-color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    /* Responsive Hero Section */
+    @media (max-width: 767px) {
+      .professional-hero-section h1 {
+        font-size: 2.5rem !important;
+      }
+
+      .professional-hero-section p {
+        font-size: 1rem !important;
+      }
+
+      .professional-hero-section div[style*="display: flex; gap: 20px"] {
+        flex-direction: column !important;
+        gap: 15px !important;
+      }
+
+      .professional-hero-section a {
+        width: 100% !important;
+        max-width: 250px !important;
+        text-align: center !important;
+      }
+    }
+  </Style>
+</head>
+
+<body>
+  <!-- loder -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loder-section left-section"></div>
+    <div class="loder-section right-section"></div>
+  </div>
+
+  <!-- Curser Pointer -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <!--==================================================-->
+  <!-- Start mediket Topber Area -->
+  <!--==================================================-->
+  <div class="topber_area">
+    <div class="container-fluid">
+      <div class="row topber_upper align-items-center d-flex">
+        <div class="col-lg-6">
+          <div class="topber-text">
+            <p><img src="assets/images/slider/top-shape.png" alt="">Welcome Dr.Sreedhar's hospital and doctors
+              appoinment services</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!--header top address-->
+          <div class="header-address-info">
+            <p><span><i class="fas fa-map-marker-alt"></i></span>Mahedipatnam,Gachibowli- Hyderabad<span
+                class="right_info"><i class="bi bi-envelope"></i></span> sreedhardrkammela@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Topber Area -->
+  <!--==================================================-->
+
+
+  <!--==================================================-->
+  <!-- Start mediket Main Menu  -->
+  <!--==================================================-->
+  <div id="sticky-header" class="meedy_nav_manu style-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <div class="logo cursor-scale small">
+            <a class="logo_img" href="index-2.html" title="DR.SREEDHAR'S"
+              style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+              DR.SREEDHAR'S
+            </a>
+            <a class="main_sticky" href="index-2.html" title="DR.SREEDHAR'S"
+              style="text-decoration: none; color: #fff; font-size: 24px; font-weight: bold; font-family: 'Unbounded', sans-serif;">
+              DR.SREEDHAR'S
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <nav class="meedy_menu">
+            <ul class="nav_scroll">
+              <li>
+                <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="contact.html">Contact </a>
+              </li>
+            </ul>
+            <div class="mediket-right-side cursor-scale small">
+              <!-- header button -->
+              <div class="header-button">
+                <a href="contact.html">
+                  Book an Appoinment
+                  <div class="mediket-hover-btn hover-btn"></div>
+                  <div class="mediket-hover-btn hover-btn2"></div>
+                  <div class="mediket-hover-btn hover-btn3"></div>
+                  <div class="mediket-hover-btn hover-btn4"></div>
+                </a>
+              </div>
+              <div class="sidebar">
+                <div class="nav-btn navSidebar-button">
+                  <span><i class="fas fa-align-left"></i></span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mediket Mobile Menu  -->
+  <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+    <div class="mobile-menu">
+      <nav class="meedy_menu">
+        <ul class="nav_scroll">
+          <li>
+            <a class="mdy-hover cursor-scale small" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="service.html">Services</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a class="mdy-hover cursor-scale small" href="contact.html">Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Main Menu  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start mediket Breatcome Section  -->
+  <!--==================================================-->
+
+  <div class="breatcome-section d-flex align-items-center"
+    style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/gallery/service.jpg'); background-size: cover; background-position: center; min-height: 350px; position: relative;">
+
+    <!-- Social Icons - Left Side -->
+    <div style="position: absolute; left: 40px; top: 50%; transform: translateY(-50%); z-index: 10;">
+      <div style="writing-mode: vertical-rl; text-orientation: mixed; margin-bottom: 40px;">
+        <span
+          style="color: #ffffff; font-size: 12px; font-weight: 400; letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">FOLLOW
+          US</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <a href="#"
+          style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+            class="fab fa-twitter"></i></a>
+        <a href="#"
+          style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="#"
+          style="color: #ffffff; font-size: 16px; transition: color 0.3s ease; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" style="position: relative; z-index: 5;">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <h1
+              style="color: #ffffff; font-size: 3.5rem; font-weight: 700; margin-bottom: 25px; font-family: 'Clash Display', sans-serif; text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">
+              Service</h1>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <a href="index.html"
+                style="color: #60A5FA; text-decoration: none; font-weight: 500; font-size: 16px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Home</a>
+              <span style="color: #ffffff; margin: 0 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">></span>
+              <span
+                style="color: #ffffff; font-weight: 500; font-size: 16px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Breatcome Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Professional Services Overview Section  -->
+  <!--==================================================-->
+  <div id="services" class="services-overview-section"
+    style="padding: 100px 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-header text-center mb-5" data-aos="fade-up">
+            <span class="section-subtitle">Our Medical Expertise</span>
+            <h2 class="section-title">Comprehensive Healthcare Services</h2>
+            <p class="section-description">Dr. Sreedhar's Hospital provides world-class medical care with cutting-edge
+              technology and compassionate treatment across multiple specialties.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="row g-4">
+        <!-- Infertility Treatment -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card modern-card">
+            <div class="service-image">
+              <img src="assets/images/serviceimage/sp2.png" alt="Infertility Treatment" class="img-fluid">
+              <div class="service-overlay">
+                <div class="service-icon">
+                  <i class="fas fa-baby"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Infertility Treatment</h3>
+              <p class="service-description">Advanced reproductive medicine including IVF, ICSI, ART, and surrogacy with
+                state-of-the-art fertility lab facilities.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> IVF & ICSI Procedures</li>
+                <li><i class="fas fa-check"></i> Fertility Preservation</li>
+                <li><i class="fas fa-check"></i> Genetic Screening</li>
+              </ul>
+              <a href="contact.html" class="service-btn">Book Consultation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Urology Services -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card modern-card">
+            <div class="service-image">
+              <img src="assets/images/serviceimage/uro.png" alt="Urology Services" class="img-fluid">
+              <div class="service-overlay">
+                <div class="service-icon">
+                  <i class="fas fa-user-md"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Advanced Urology</h3>
+              <p class="service-description">Comprehensive urological care with minimally invasive techniques, robotic
+                surgery, and kidney transplant services.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Robotic Surgery</li>
+                <li><i class="fas fa-check"></i> Kidney Transplants</li>
+                <li><i class="fas fa-check"></i> Endoscopic Procedures</li>
+              </ul>
+              <a href="contact.html" class="service-btn">Book Consultation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Obstetrics & Gynecology -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card modern-card">
+            <div class="service-image">
+              <img src="assets/images/serviceimage/gas.png" alt="Obstetrics & Gynecology" class="img-fluid">
+              <div class="service-overlay">
+                <div class="service-icon">
+                  <i class="fas fa-female"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Women's Healthcare</h3>
+              <p class="service-description">Specialized obstetrics and gynecology services including high-risk
+                pregnancy care, minimally invasive surgery, and wellness programs.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> High-Risk Pregnancy</li>
+                <li><i class="fas fa-check"></i> Laparoscopic Surgery</li>
+                <li><i class="fas fa-check"></i> Women's Wellness</li>
+              </ul>
+              <a href="contact.html" class="service-btn">Book Consultation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- General Surgery -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card modern-card">
+            <div class="service-image">
+              <img src="assets/images/serviceimage/generalsurgoen.png" alt="General Surgery" class="img-fluid">
+              <div class="service-overlay">
+                <div class="service-icon">
+                  <i class="fas fa-cut"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">General Surgery</h3>
+              <p class="service-description">Comprehensive surgical procedures using advanced minimally invasive
+                techniques with faster recovery times and better outcomes.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Laparoscopic Surgery</li>
+                <li><i class="fas fa-check"></i> Emergency Surgery</li>
+                <li><i class="fas fa-check"></i> Day Care Procedures</li>
+              </ul>
+              <a href="contact.html" class="service-btn">Book Consultation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency Care -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card modern-card">
+            <div class="service-image">
+              <img src="assets/images/serviceimage/emergency.png" alt="Emergency Care" class="img-fluid">
+              <div class="service-overlay">
+                <div class="service-icon">
+                  <i class="fas fa-ambulance"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">24/7 Emergency Care</h3>
+              <p class="service-description">Round-the-clock emergency medical services with rapid response team,
+                critical care unit, and trauma management.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> 24/7 Availability</li>
+                <li><i class="fas fa-check"></i> Critical Care Unit</li>
+                <li><i class="fas fa-check"></i> Trauma Management</li>
+              </ul>
+              <a href="contact.html" class="service-btn">Emergency Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diagnostic Services -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card modern-card">
+            <div class="service-image">
+              <img src="assets/images/serviceimage/dia.png" alt="Diagnostic Services" class="img-fluid" style="width: 100%;height:auto; object-fit: cover">
+              <div class="service-overlay">
+                <div class="service-icon">
+                  <i class="fas fa-microscope"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Advanced Diagnostics</h3>
+              <p class="service-description">State-of-the-art diagnostic imaging and laboratory services for accurate
+                diagnosis and treatment planning.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> MRI & CT Scans</li>
+                <li><i class="fas fa-check"></i> Digital X-Ray</li>
+                <li><i class="fas fa-check"></i> Laboratory Services</li>
+              </ul>
+              <a href="contact.html" class="service-btn">Schedule Test</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Professional Services Overview Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Why Choose Us Section  -->
+  <!--==================================================-->
+  <div class="why-choose-section"
+    style="padding: 100px 0; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); position: relative;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-header text-center mb-5" data-aos="fade-up">
+            <span class="section-subtitle-white">Excellence in Healthcare</span>
+            <h2 class="section-title-white">Why Choose Dr. Sreedhar's Hospital</h2>
+            <p class="section-description-white">We combine advanced medical technology with compassionate care to
+              deliver exceptional healthcare outcomes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Expert Medical Team</h4>
+              <p>Highly qualified specialists with years of experience in their respective fields.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Advanced Technology</h4>
+              <p>State-of-the-art medical equipment and cutting-edge treatment methodologies.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="feature-content">
+              <h4>24/7 Emergency Care</h4>
+              <p>Round-the-clock emergency services with rapid response and critical care.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Compassionate Care</h4>
+              <p>Patient-centered approach with personalized treatment plans and emotional support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Why Choose Us Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Detailed Services Section  -->
+  <!--==================================================-->
+  <div class="detailed-services-section" style="padding: 100px 0; background-color: #ffffff;">
+    <div class="container">
+      <!-- Infertility Treatment Details -->
+      <div class="service-detail-block mb-5" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="service-detail-content">
+              <span class="service-category">Reproductive Medicine</span>
+              <h3 class="service-detail-title">Advanced Infertility Treatment</h3>
+              <p class="service-detail-description">Our fertility center offers comprehensive reproductive medicine
+                services with the latest assisted reproductive technologies. We provide personalized treatment plans to
+                help couples achieve their dream of parenthood.</p>
+
+              <div class="service-highlights">
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>IVF & ICSI Procedures</h5>
+                    <p>Advanced in-vitro fertilization with high success rates</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>Fertility Preservation</h5>
+                    <p>Egg and sperm freezing for future family planning</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>Genetic Screening</h5>
+                    <p>Pre-implantation genetic testing for healthy pregnancies</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html" class="detail-cta-btn">Schedule Consultation</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-detail-image">
+              <img src="assets/images/serviceimage/sp2.png" alt="Infertility Treatment" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Urology Services Details -->
+      <div class="service-detail-block mb-5" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="service-detail-content">
+              <span class="service-category">Surgical Excellence</span>
+              <h3 class="service-detail-title">Comprehensive Urology Services</h3>
+              <p class="service-detail-description">Our urology department provides advanced surgical and non-surgical
+                treatments for urological conditions using minimally invasive techniques and robotic surgery for optimal
+                patient outcomes.</p>
+
+              <div class="service-highlights">
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>Robotic Surgery</h5>
+                    <p>Precision surgery with faster recovery times</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>Kidney Transplantation</h5>
+                    <p>Complete kidney transplant program with expert care</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>Endoscopic Procedures</h5>
+                    <p>Minimally invasive treatments for urological conditions</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html" class="detail-cta-btn">Book Appointment</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="service-detail-image">
+              <img src="assets/images/serviceimage/uro.png" alt="Urology Services" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Women's Healthcare Details -->
+      <div class="service-detail-block" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="service-detail-content">
+              <span class="service-category">Women's Health</span>
+              <h3 class="service-detail-title">Obstetrics & Gynecology Excellence</h3>
+              <p class="service-detail-description">Comprehensive women's healthcare services from adolescence through
+                menopause, including specialized care for high-risk pregnancies and advanced gynecological procedures.
+              </p>
+
+              <div class="service-highlights">
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>High-Risk Pregnancy Care</h5>
+                    <p>Specialized monitoring and care for complex pregnancies</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>Minimally Invasive Surgery</h5>
+                    <p>Laparoscopic procedures with faster recovery</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <div>
+                    <h5>Women's Wellness Programs</h5>
+                    <p>Preventive care and health screening programs</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html" class="detail-cta-btn">Women's Health Consultation</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-detail-image">
+              <img src="assets/images/serviceimage/gas.png" alt="Women's Healthcare" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Detailed Services Section  -->
+  <!--==================================================-->
+  <!--==================================================-->
+  <!-- End Detailed Infertility Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Detailed Urology Section  -->
+  <!--==================================================-->
+  <div class="service-details-section mobile-enhanced-urology"
+    style="padding: 80px 0; background-color: #f8f9fa; position: relative; overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mediket-section-title text-center mb-60" data-aos="fade-up">
+            <h4>Urological Care</h4>
+            <h1>Urology Services</h1>
+            <p>Advanced urological treatments with cutting-edge technology</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-60">
+        <div class="col-lg-6">
+          <div class="service-details-thumb mobile-image-enhanced" data-aos="fade-up-right">
+            <img src="assets/images/serviceimage/urology.png" alt="service-details"
+              style="height: 400px; width: 100%; object-fit: cover; border-radius: 10px;">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-details-content mobile-content-enhanced" data-aos="fade-up-left">
+            <h3>Comprehensive Urological Care</h3>
+            <p>Our urology department provides advanced treatments for all urological conditions:</p>
+            <ul class="service-features mobile-features-enhanced">
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Endoscopic
+                  Procedures</strong> - Minimally invasive
+                urological surgeries</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Robotic Surgery</strong> -
+                Precision robotic-assisted
+                procedures</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Pediatric Urology</strong>
+                - Specialized care for
+                children</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Kidney Transplants</strong>
+                - Complete transplant
+                services</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Stone Management</strong> -
+                Advanced lithotripsy
+                techniques</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Prostate Care</strong> -
+                Comprehensive prostate
+                treatments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Detailed Urology Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Detailed Obstetrics & Gynecology Section  -->
+  <!--==================================================-->
+  <div class="service-details-section mobile-enhanced-obstetrics"
+    style="padding: 80px 0; background-color: #ffffff; position: relative; overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mediket-section-title text-center mb-60" data-aos="fade-up">
+            <h4>Women's Health</h4>
+            <h1>Obstetrics & Gynecology</h1>
+            <p>Comprehensive women's healthcare services with specialized treatments</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-60">
+        <div class="col-lg-6">
+          <div class="service-details-content mobile-content-enhanced" data-aos="fade-up-right">
+            <h3>Advanced Women's Healthcare</h3>
+            <p>Our obstetrics and gynecology department offers comprehensive care for women:</p>
+            <ul class="service-features mobile-features-enhanced">
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>High-Risk
+                  Pregnancy</strong> - Specialized
+                maternal-fetal medicine</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Gynecological
+                  Endoscopy</strong> - Minimally invasive
+                procedures</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>FemiLift
+                  Treatments</strong> - Vaginal rejuvenation
+                therapy</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Prenatal Care</strong> -
+                Complete pregnancy monitoring
+              </li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Gynecological
+                  Surgery</strong> - Advanced surgical
+                procedures</li>
+              <li class="mobile-feature-item"><i class="bi bi-check-circle-fill"></i><strong>Menopause
+                  Management</strong> - Hormone therapy and
+                support</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-details-thumb mobile-image-enhanced" data-aos="fade-up-left">
+            <img src="assets/images/serviceimage/ob.png" alt="service-details"
+              style="height: 400px; width: 100%; object-fit: cover; border-radius: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Detailed Obstetrics & Gynecology Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Special Machines Section  -->
+  <!--==================================================-->
+  <div class="service-section style-3 style-4" style="background-color: #f8f9fa; padding: 80px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mediket-section-title text-center mb-60" data-aos="fade-up">
+            <h4>Advanced Technology</h4>
+            <h1>Special Medical Machines</h1>
+            <p>State-of-the-art medical equipment for specialized treatments</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <!-- single machine box -->
+          <div class="single-service-box" data-aos="fade-up-right">
+            <div class="service-icon cursor-scale small">
+              <img src="assets/images/resource/service-icon4.png" alt="">
+            </div>
+            <div class="single_service_inner">
+              <div class="service-thumb">
+                <img src="assets/images/main-home/service-img-04.jpg" alt="">
+              </div>
+              <div class="service-content">
+                <h3>FemiLift</h3>
+                <p>Women's vaginal health treatment using advanced laser technology for intimate wellness and
+                  rejuvenation</p>
+                <div class="service_btn cursor-scale small">
+                  <a href="about.html">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <!-- single machine box -->
+          <div class="single-service-box" data-aos="fade-up">
+            <div class="service-icon cursor-scale small">
+              <img src="assets/images/resource/service-icon5.png" alt="">
+            </div>
+            <div class="single_service_inner">
+              <div class="service-thumb">
+                <img src="assets/images/main-home/service-img-05.jpg" alt="">
+              </div>
+              <div class="service-content">
+                <h3>Medspec ED 1000</h3>
+                <p>Erectile Dysfunction Shockwave Therapy using cutting-edge medical technology for men's health
+                  treatment</p>
+                <div class="service_btn cursor-scale small">
+                  <a href="about.html">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <!-- single machine box -->
+          <div class="single-service-box" data-aos="fade-up-left">
+            <div class="service-icon cursor-scale small">
+              <img src="assets/images/resource/service-icon6.png" alt="">
+            </div>
+            <div class="single_service_inner">
+              <div class="service-thumb">
+                <img src="assets/images/main-home/service-img-06.jpg" alt="">
+              </div>
+              <div class="service-content">
+                <h3>Pixel CO2 Laser (ALMA)</h3>
+                <p>Advanced cosmetic and surgical laser applications for skin rejuvenation and medical treatments</p>
+                <div class="service_btn cursor-scale small">
+                  <a href="about.html">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Special Machines Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Detailed Special Machines Section  -->
+  <!--==================================================-->
+  <div class="service-details-section" style="padding: 80px 0; background-color: #ffffff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mediket-section-title text-center mb-60" data-aos="fade-up">
+            <h4>Advanced Equipment</h4>
+            <h1>Special Medical Machines</h1>
+            <p>State-of-the-art medical technology for specialized treatments</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FemiLift Details -->
+      <div class="row align-items-center mb-80">
+        <div class="col-lg-6">
+          <div class="service-details-content" data-aos="fade-up-right">
+            <h3>FemiLift - Women's Vaginal Health</h3>
+            <p>Revolutionary laser technology for intimate wellness and vaginal rejuvenation:</p>
+            <ul class="service-features">
+              <li><i class="bi bi-check-circle-fill"></i><strong>Vaginal Tightening</strong> - Non-surgical vaginal
+                rejuvenation</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Stress Incontinence</strong> - Treatment for urinary
+                incontinence</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Vaginal Dryness</strong> - Restoration of natural
+                lubrication</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Improved Sensation</strong> - Enhanced intimate
+                wellness</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Quick Recovery</strong> - Minimal downtime procedure
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-details-thumb" data-aos="fade-up-left">
+            <img src="assets/images/serviceimage/femilift.png" alt="service-details"
+              style="height: 350px; width: 100%; object-fit: cover; border-radius: 10px;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Medspec ED 1000 Details -->
+      <div class="row align-items-center mb-80">
+        <div class="col-lg-6">
+          <div class="service-details-thumb" data-aos="fade-up-right">
+            <img src="assets/images/serviceimage/medspec.png" alt="service-details"
+              style="height: 350px; width: 100%; object-fit: cover; border-radius: 10px;">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-details-content" data-aos="fade-up-left">
+            <h3>Medspec ED 1000 - Erectile Dysfunction Shockwave Therapy</h3>
+            <p>Advanced shockwave therapy for men's health and erectile dysfunction treatment:</p>
+            <ul class="service-features">
+              <li><i class="bi bi-check-circle-fill"></i><strong>Non-Invasive Treatment</strong> - No surgery or
+                medication required</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Improved Blood Flow</strong> - Enhanced penile
+                circulation</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Natural Results</strong> - Stimulates natural healing
+                processes</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Quick Sessions</strong> - Short treatment duration</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Long-lasting Effects</strong> - Sustained improvement
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pixel CO2 Laser Details -->
+      <div class="row align-items-center mb-60">
+        <div class="col-lg-6">
+          <div class="service-details-content" data-aos="fade-up-right">
+            <h3>Pixel CO2 Laser (ALMA) - Cosmetic & Surgical Applications</h3>
+            <p>Advanced fractional CO2 laser technology for skin rejuvenation and medical treatments:</p>
+            <ul class="service-features">
+              <li><i class="bi bi-check-circle-fill"></i><strong>Skin Resurfacing</strong> - Advanced facial
+                rejuvenation</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Scar Treatment</strong> - Acne and surgical scar
+                reduction</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Wrinkle Reduction</strong> - Anti-aging treatments</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Pigmentation</strong> - Age spots and sun damage
+                treatment</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Surgical Applications</strong> - Precise medical
+                procedures</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-details-thumb" data-aos="fade-up-left">
+            <img src="assets/images/serviceimage/cosmetic.png" alt="service-details"
+              style="height: 350px; width: 100%; object-fit: cover; border-radius: 10px;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Combined Photos Section -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mediket-section-title text-center mb-40" data-aos="fade-up">
+            <h2>PHOTOS OF SPECIAL MACHINES</h2>
+            <p>FemiLift, Medspec ED 1000, Pixel CO2 Laser (ALMA)</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="gallery-grid" data-aos="zoom-in"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; min-height: 250px; background: #f8f9fa; border: 2px dashed #ddd; padding: 50px; text-align: center; color: #999; border-radius: 10px;">
+            <div class="gallery-item">
+              <img src="assets/images/serviceimage/02052013765.jpg" alt="FemiLift Equipment"
+                style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/images/serviceimage/Robotic Uro Console.jpg" alt="Medspec ED 1000"
+                style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/images/serviceimage/pcnl.jpg" alt="Pixel CO2 Laser"
+                style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Detailed Special Machines Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start mediket Counter Section -->
+  <!--==================================================-->
+  <div class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mediket-section-title">
+                <h4>About Dr.Sreedhar's</h4>
+                <h1>Delivering Quality</h1>
+                <h1>Health's Care for</h1>
+                <h1 style="margin-bottom: 1rem;">Generations</h1>
+              </div>
+              <div class="about-shape">
+                <img src="assets/images/serviceimage/Dr.Sridevi Award -Dr.Peter Nagi.jpg"
+                  alt="Dr. Sridevi receiving an award from Dr. Peter Nagi" />
+              </div>
+              <div class="mediket-btn">
+                <a href="about.html">More About &#8594;</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about_list_item">
+                <div class="about-service-list">
+                  <p class="about_qute">Completely e-enable covalent functionalities and market positioning
+                    infomediaries initiate exceptional hospital supply</p>
+                  <ul>
+                    <li>Providing Compassionate Care</li>
+                    <li>Brings Innovation and Care Together</li>
+                    <li>From Prevention to Recovery</li>
+                  </ul>
+                </div>
+                <div class="mediket-author">
+                  <div class="author-img">
+                    <img src="assets/images/doctor/kameela sridevi_imresizer.jpg" alt="Dr. Kammela Sreedevi">
+                  </div>
+                  <div class="author-bio">
+                    <h3>Dr.kammela Sreedevi</h3>
+                    <span>Senior Consultant Gynaecologist</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="about-thumb">
+            <img src="assets/images/serviceimage/2012-11-13 19.47.03.jpg" alt="Medical facility image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Counter Section  -->
+  <!--==================================================-->
+
+
+  <!--==================================================-->
+  <!-- Start Statistics Section  -->
+  <!--==================================================-->
+  <div class="statistics-section"
+    style="padding: 80px 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-header text-center mb-5" data-aos="fade-up">
+            <span class="section-subtitle">Our Achievements</span>
+            <h2 class="section-title">Healthcare Excellence in Numbers</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number">15,000+</h3>
+              <p class="stat-label">Happy Patients</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-procedures"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number">5,000+</h3>
+              <p class="stat-label">Successful Surgeries</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number">15+</h3>
+              <p class="stat-label">Years of Excellence</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="stat-number">24/7</h3>
+              <p class="stat-label">Emergency Care</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Statistics Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start Call to Action Section  -->
+  <!--==================================================-->
+  <div class="cta-section"
+    style="padding: 100px 0; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); position: relative; overflow: hidden;">
+    <!-- Background Pattern -->
+    <div
+      style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: url('data:image/svg+xml,<svg width="
+      60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd">
+        <g fill="%23ffffff" fill-opacity="0.1">
+          <circle cx="30" cy="30" r="2" />
+        </g></svg>'); background-size: 60px 60px;">
+    </div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="cta-content text-center" data-aos="fade-up">
+            <span class="cta-subtitle">Ready to Get Started?</span>
+            <h2 class="cta-title">Book Your Appointment Today</h2>
+            <p class="cta-description">Take the first step towards better health. Our expert medical team is ready to
+              provide you with personalized care and treatment.</p>
+
+            <div class="cta-buttons">
+              <a href="contact.html" class="cta-btn primary">Book Appointment</a>
+              <a href="tel:+919876543210" class="cta-btn secondary">
+                <i class="fas fa-phone"></i>
+                Emergency Call
+              </a>
+            </div>
+
+            <div class="cta-contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Mahedipatnam, Gachibowli - Hyderabad</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>sreedhardrkammela@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Call to Action Section  -->
+  <!--==================================================-->
+
+  <!--==================================================-->
+  <!-- Start mediket Footer Section -->
+  <!--==================================================-->
+  <div class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer_widget_upper">
+            <div class="company-logo cursor-scale small">
+              <a href="index-2.html">
+                <h1 style="color: #ffffff; font-size: 2.5rem; font-weight: bold; margin: 0;">DR.SREEDHAR'S</h1>
+              </a>
+            </div>
+            <div class="footer_title">
+              <h2>Award Wining Medical</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="widget widgets-company-info" data-aos="zoom-in-right">
+            <h4 class="widget-title">About Us</h4>
+            <div class="company-info-desc">
+              <p>
+                Completely e-enable covalent functionalities and medical positioning infomediarie interactively
+              </p>
+            </div>
+            <div class="footer-mediket-contact">
+              <div class="mediket-info">
+                <h5>Mahedipatnam,Gachibowli<br>Hyderabad</h5>
+              </div>
+              <div class="mediket-info">
+                <h5>+91 90321 28645</h5>
+              </div>
+              <div class="mediket-info">
+                <h5>sreedhardrkammela@gmail.com</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="widget widget-nav-menu" data-aos="zoom-out">
+            <h4 class="widget-title">Navigation</h4>
+            <div class="menu-quick-link-content">
+              <ul class="footer-menu cursor-scale small">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="service.html"> Services </a></li>
+                <li><a href="about.html"> About Us </a></li>
+                <li><a href="gallery.html"> Gallery </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="mediket-address" data-aos="zoom-in-left">
+            <h4 class="widget-title">Subscribe Newsletter</h4>
+            <div class="footer_widget_anytime_alarm">
+              <div class="anytime_alarm">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <p>Signup our newsletter for lates updates
+                from our medical anytime</p>
+            </div>
+            <form>
+              <div class="subscribe_form">
+                <input type="email" name="email" placeholder="sreedhardrkammela@gmail.com" />
+                <button type="submit" class="submits-btn">
+                  <i class="flaticon flaticon-right-arrow"></i>
+                </button>
+              </div>
+            </form>
+            <div class="mediket-social-icon cursor-scale small">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"> </i>
+              </a>
+              <a href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="foorer-shape">
+          <div class="footer-thumb1" data-aos="zoom-in-left">
+            <img src="assets/images/main-home/feathure-shapes.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row footer-btm d-flex align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="mediket-company-desc">
+            <p>
+              Copyright © 2025 Dr.Sreedhar's.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="footer-bottom-menu text-right">
+            <ul>
+              <li><a href="#">FACEBOOK</a></li>
+              <li><a href="#">TWITTER</a></li>
+              <li><a href="#">INSTAGRAM</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End mediket Footer Section -->
+  <!--==================================================-->
+
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="venobox/venobox.js"></script>
+  <script src="venobox/venobox.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.js"></script>
+  <script src="assets/js/jquery.scrollUp.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/appear.js"></script>
+  <script src="assets/js/jquery.barfiller.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/my.js"></script>
+
+  <!-- WhatsApp Chat Interface -->
+  <!--==================================================-->
+  <div class="whatsapp-float" id="whatsapp-chat">
+    <div class="whatsapp-button" onclick="toggleChatInterface(event)">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-tooltip">
+      <span>Chat with us!</span>
+    </div>
+  </div>
+
+  <!-- WhatsApp Chat Interface Popup -->
+  <div class="whatsapp-chat-interface" id="whatsapp-interface">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <img src="assets/images/logo3.png" alt="Dr. Sreedhar Hospital" class="chat-avatar">
+        <div class="chat-header-text">
+          <h4>Dr. Sreedhar Hospital</h4>
+          <span class="online-status">Online</span>
+        </div>
+      </div>
+      <button class="close-chat" onclick="closeChatInterface()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="chat-body">
+      <div class="chat-message bot-message">
+        <div class="message-avatar">
+          <i class="fas fa-user-md"></i>
+        </div>
+        <div class="message-content">
+          <p>Hello! 👋 Welcome to Dr. Sreedhar Hospital!</p>
+          <p>How can I assist you today?</p>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+
+      <div class="quick-options">
+        <button class="quick-option" onclick="selectOption('appointment')">
+          📅 Book Appointment
+        </button>
+        <button class="quick-option" onclick="selectOption('services')">
+          🏥 Our Services
+        </button>
+        <button class="quick-option" onclick="selectOption('emergency')">
+          🚨 Emergency
+        </button>
+        <button class="quick-option" onclick="selectOption('contact')">
+          📞 Contact Info
+        </button>
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <button class="whatsapp-redirect-btn" onclick="redirectToWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+        Continue on WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Chat Interface Overlay -->
+  <div class="chat-overlay" id="chat-overlay" onclick="closeChatInterface()"></div>
+  <!--==================================================-->
+  <!-- End WhatsApp Chat Interface -->
+  <!--==================================================-->
+
+  <script>
+    // WhatsApp Chat Interface Functions
+    let selectedOption = '';
+
+    function toggleChatInterface(event) {
+      // Only proceed if the event is a trusted (user-generated) event, or if there's no event (e.g., direct call)
+      // This helps prevent programmatic calls from opening the chat automatically
+      if (event && !event.isTrusted) {
+        return;
+      }
+      const chatInterface = document.getElementById('whatsapp-interface');
+      const overlay = document.getElementById('chat-overlay');
+
+      if (chatInterface.classList.contains('active')) {
+        closeChatInterface();
+      } else {
+        chatInterface.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeChatInterface() {
+      const chatInterface = document.getElementById('whatsapp-interface');
+      const overlay = document.getElementById('chat-overlay');
+
+      chatInterface.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    function selectOption(option) {
+      selectedOption = option;
+      const options = document.querySelectorAll('.quick-option');
+      options.forEach(opt => opt.classList.remove('selected'));
+
+      event.target.classList.add('selected');
+
+      // Add user message to chat
+      addUserMessage(event.target.textContent);
+
+      // Add bot response
+      setTimeout(() => {
+        addBotResponse(option);
+      }, 1000);
+    }
+
+    function addUserMessage(message) {
+      const chatBody = document.querySelector('.chat-body');
+      const userMessage = document.createElement('div');
+      userMessage.className = 'chat-message user-message';
+      userMessage.innerHTML = `
+                <div class="message-content">
+                    <p>${message}</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            `;
+      chatBody.appendChild(userMessage);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function addBotResponse(option) {
+      const responses = {
+        'appointment': 'Great! I\'ll help you book an appointment. Please continue on WhatsApp to schedule your visit with our doctors.',
+        'services': 'We offer comprehensive medical services including cardiology, orthopedics, pediatrics, and emergency care. Let\'s discuss your specific needs on WhatsApp.',
+        'emergency': 'For medical emergencies, please call us immediately at +91 903 212 8645 or visit our emergency department. For non-urgent queries, continue on WhatsApp.',
+        'contact': 'You can reach us at +91 903 212 8645 or visit our hospital. Let\'s continue our conversation on WhatsApp for more details.'
+      };
+
+      const chatBody = document.querySelector('.chat-body');
+      const botMessage = document.createElement('div');
+      botMessage.className = 'chat-message bot-message';
+      botMessage.innerHTML = `
+                <div class="message-avatar">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="message-content">
+                    <p>${responses[option]}</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            `;
+      chatBody.appendChild(botMessage);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function redirectToWhatsApp() {
+      if (selectedOption) {
+        if (selectedOption === 'appointment') {
+          // Redirect to contact page for appointments
+          window.location.href = 'contact.html';
+          return;
+        } else if (selectedOption === 'services') {
+          // Redirect to service page for services
+          window.location.href = 'service.html';
+          return;
+        }
+      }
+
+      // Default WhatsApp redirect for other options
+      const phoneNumber = '+919032128645';
+      let message = 'Hello! I would like to know more about Dr. Sreedhar\'s Hospital services.';
+
+      if (selectedOption) {
+        const optionMessages = {
+          'emergency': 'I need information about emergency services.',
+          'contact': 'I need your contact information and location details.'
+        };
+        message = `Hello! ${optionMessages[selectedOption] || message}`;
+      }
+
+      const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+      closeChatInterface();
+    }
+
+    // Ensure chat interface is closed on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      closeChatInterface();
+    });
+  </script>
+
+  <style>
+    /* WhatsApp Floating Button Styles */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      z-index: 9999;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+      }
+
+      100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      }
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128c7e;
+      transform: scale(1.1);
+      animation: none;
+    }
+
+    .whatsapp-button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+    }
+
+    .whatsapp-tooltip {
+      position: absolute;
+      right: 70px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #333;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent transparent #333;
+    }
+
+    .whatsapp-float:hover .whatsapp-tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Chat Interface Overlay */
+    .chat-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .chat-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* WhatsApp Chat Interface */
+    .whatsapp-chat-interface {
+      position: fixed;
+      bottom: 120px;
+      right: 40px;
+      width: 350px;
+      height: 500px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      z-index: 10000;
+      transform: translateY(100px) scale(0.8);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      overflow: hidden;
+    }
+
+    .whatsapp-chat-interface.active {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Chat Header */
+    .chat-header {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .chat-header-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .chat-avatar {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .chat-header-text h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .online-status {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .close-chat {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .close-chat:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Chat Body */
+    .chat-body {
+      height: 320px;
+      overflow-y: auto;
+      padding: 20px;
+      background: #f0f2f5;
+    }
+
+    .chat-message {
+      margin-bottom: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .bot-message {
+      justify-content: flex-start;
+    }
+
+    .user-message {
+      justify-content: flex-end;
+    }
+
+    .message-avatar {
+      width: 35px;
+      height: 35px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .message-content {
+      background: white;
+      padding: 12px 16px;
+      border-radius: 18px;
+      max-width: 250px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-message .message-content {
+      background: #dcf8c6;
+    }
+
+    .message-content p {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .message-time {
+      font-size: 11px;
+      color: #666;
+      display: block;
+      text-align: right;
+    }
+
+    /* Quick Options */
+    .quick-options {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .quick-option {
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 12px 8px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .quick-option:hover {
+      border-color: #25d366;
+      background: #f0fff4;
+    }
+
+    .quick-option.selected {
+      background: #25d366;
+      color: white;
+      border-color: #25d366;
+    }
+
+    /* Chat Footer */
+    .chat-footer {
+      padding: 20px;
+      background: white;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .whatsapp-redirect-btn {
+      width: 100%;
+      background: #25d366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-redirect-btn:hover {
+      background: #128c7e;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+      }
+
+      .whatsapp-tooltip {
+        font-size: 12px;
+        padding: 6px 10px;
+        right: 60px;
+      }
+
+      .whatsapp-chat-interface {
+        width: 90%;
+        right: 5%;
+        bottom: 90px;
+        height: 450px;
+      }
+
+      .quick-options {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Scrollbar Styling */
+    .chat-body::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .chat-body::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    .chat-body::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    .chat-body::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
+  </style>
+</body>
+
+</html>

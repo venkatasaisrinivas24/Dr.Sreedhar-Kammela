@@ -1,0 +1,312 @@
+/* Gallery Page Custom Styles */
+
+/* Gallery Filter Tabs */
+.gallery-filter-tabs {
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid #1976D2;
+  color: #1976D2;
+  padding: 12px 25px;
+  margin: 0 10px 10px 0;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #1976D2;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(25, 118, 210, 0.3);
+}
+
+/* Doctor Gallery Sections */
+.doctor-gallery-section {
+  margin-bottom: 60px;
+}
+
+.doctor-title-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.doctor-title-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Achievement Details */
+.achievement-details {
+  padding: 20px 0;
+}
+
+.achievement-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, #1976D2, #1E88E5);
+  border-radius: 2px;
+}
+
+/* Gallery Items */
+.gallery-item {
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-image-placeholder,
+.achievement-image-placeholder > div {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-image-placeholder:hover,
+.achievement-image-placeholder > div:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.gallery-image-placeholder::before,
+.achievement-image-placeholder > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(25, 118, 210, 0.8), rgba(30, 136, 229, 0.8));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-image-placeholder:hover::before,
+.achievement-image-placeholder > div:hover::before {
+  opacity: 1;
+}
+
+/* Media Sections */
+.media-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.media-content::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.media-item {
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.media-item:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateX(10px);
+}
+
+/* Additional Gallery Section */
+.additional-gallery-section {
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 2px solid #f0f0f0;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.lightbox-close:hover {
+  color: #1976D2;
+}
+
+#lightbox-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#lightbox-caption {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-btn {
+    margin: 0 5px 10px 0;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+  .doctor-title-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .doctor-title-section h3 {
+    font-size: 1.1rem;
+  }
+  
+  .achievement-text {
+    padding: 20px;
+  }
+  
+  .media-content {
+    padding: 30px 20px;
+  }
+  
+  .lightbox-content {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-filter-tabs {
+    text-align: left;
+  }
+  
+  .filter-btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  
+  .achievement-details {
+    margin-top: 30px;
+  }
+  
+  .media-item {
+    padding: 10px;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gallery Item Hover Effects */
+.gallery-item[data-category] {
+  position: relative;
+}
+
+.gallery-item[data-category]::after {
+  content: attr(data-category);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #1976D2;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item[data-category]:hover::after {
+  opacity: 1;
+}
+
+/* Filter Animation */
+.gallery-item.hide {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.gallery-item.show {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
