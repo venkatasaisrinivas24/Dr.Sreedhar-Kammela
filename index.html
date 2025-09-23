@@ -447,6 +447,60 @@
     .hero-content .description { font-size: 16px; }
     .hero-awards-container { flex-direction: column; align-items: center; }
 }
+@media (max-width: 768px) {
+  .team-single-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the image container horizontally */
+    text-align: center;
+    padding: 20px;
+    height: 100%; /* Helps maintain equal height in the row */
+  }
+
+  .team-thumb {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%; /* Makes the container a perfect circle */
+    overflow: hidden; /* Clips the image to the circular shape */
+    flex-shrink: 0; /* Prevents the image container from shrinking */
+    
+    /* This style creates the blue circular frame.
+       You can change the color (#1E88E5) and thickness (6px) as you like. */
+    border: 6px solid #1E88E5;
+    
+    /* Adds a subtle shadow for better visual depth */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .team-thumb img {
+    width: 100%;
+    height: 100%;
+    /* Ensures the image fills the circle without being stretched */
+    object-fit: cover;
+  }
+
+  .team-content {
+    margin-top: 25px; /* Adds some space between the image and the text */
+  }
+}
+
+/* For smaller mobile phones (up to 480px wide) */
+@media (max-width: 480px) {
+  .team-thumb {
+    width: 180px;
+    height: 180px;
+    border-width: 5px; /* Adjusts border thickness for a smaller circle */
+  }
+
+  .team-content h2 {
+    font-size: 1.3rem; /* Makes the name slightly smaller */
+  }
+
+  .team-content h5 {
+    font-size: 0.9rem; /* Adjusts the designation font size */
+  }
+}
     </style>
   </head>
   <body>
