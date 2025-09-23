@@ -507,7 +507,7 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30460.62799983196!2d78.4201648419615!3d17.38356973684877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a534f3d69%3A0x6a5405963454b52!2sMehdipatnam%2C%20Hyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1668789395893!5m2!1sen!2sus" 
       width="100%" 
       height="100%" 
-      style="border:0; border-radius: 12px;" 
+      style="border:0; border-radius: 12px;"
       allowfullscreen="" 
       loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
@@ -1029,5 +1029,128 @@
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/my.js"></script>
+   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.carousel-image');
+            let currentIndex = 0;
+
+            if (images.length > 0) {
+                setInterval(() => {
+                    images[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].classList.add('active');
+                }, 5000); // Change image every 5 seconds
+            }
+        });
+
+        // WhatsApp Chat Interface Functions
+        let selectedOption = '';
+
+        function toggleChatInterface(isManual = false) {
+            const chatInterface = document.getElementById('whatsapp-interface');
+            const overlay = document.getElementById('chat-overlay');
+            
+            if (chatInterface.classList.contains('active')) {
+                closeChatInterface();
+            } else if (isManual) { // Only open if manually triggered
+                chatInterface.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeChatInterface() {
+            const chatInterface = document.getElementById('whatsapp-interface');
+            const overlay = document.getElementById('chat-overlay');
+            
+            chatInterface.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function selectOption(option) {
+            selectedOption = option;
+            const options = document.querySelectorAll('.quick-option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            
+            event.target.classList.add('selected');
+            
+            // Add user message to chat
+            addUserMessage(event.target.textContent);
+            
+            // Add bot response
+            setTimeout(() => {
+                addBotResponse(option);
+            }, 1000);
+        }
+
+        function addUserMessage(message) {
+            const chatBody = document.querySelector('.chat-body');
+            const userMessage = document.createElement('div');
+            userMessage.className = 'chat-message user-message';
+            userMessage.innerHTML = (
+                `<div class="message-content">
+                    <p>${message}</p>
+                    <span class="message-time">Just now</span>
+                </div>`
+            );
+            chatBody.appendChild(userMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function addBotResponse(option) {
+            const responses = {
+                'appointment': 'Great! I\'ll help you book an appointment. Please continue on WhatsApp to schedule your visit with our doctors.',
+                'services': 'We offer comprehensive medical services including cardiology, orthopedics, pediatrics, and emergency care. Let\'s discuss your specific needs on WhatsApp.',
+                'emergency': 'For medical emergencies, please call us immediately at +91 903 212 8645 or visit our emergency department. For non-urgent queries, continue on WhatsApp.',
+                'contact': 'You can reach us at +91 903 212 8645 or visit our hospital. Let\'s continue our conversation on WhatsApp for more details.'
+            };
+
+            const chatBody = document.querySelector('.chat-body');
+            const botMessage = document.createElement('div');
+            botMessage.className = 'chat-message bot-message';
+            botMessage.innerHTML = (
+                `<div class="message-avatar">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="message-content">
+                    <p>${responses[option]}</p>
+                    <span class="message-time">Just now</span>
+                </div>`
+            );
+            chatBody.appendChild(botMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function redirectToWhatsApp() {
+            if (selectedOption) {
+                if (selectedOption === 'appointment') {
+                    // Redirect to contact page for appointments
+                    window.location.href = 'contact.html';
+                    return;
+                } else if (selectedOption === 'services') {
+                    // Redirect to service page for services
+                    window.location.href = 'service.html';
+                    return;
+                }
+            }
+            
+            // Default WhatsApp redirect for other options
+            const phoneNumber = '+919032128645';
+            let message = 'Hello! I would like to know more about Dr. Sreedhar\'s Hospital services.';
+            
+            if (selectedOption) {
+                const optionMessages = {
+                    'emergency': 'I need information about emergency services.',
+                    'contact': 'I need your contact information and location details.'
+                };
+                message = `Hello! ${optionMessages[selectedOption] || message}`;
+            }
+            
+            const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+            // window.open(whatsappURL, '_blank');
+            closeChatInterface();
+        }
+    </script>
 </body>
 </html>

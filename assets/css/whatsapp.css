@@ -319,6 +319,16 @@
     }
 }
 
+@media (max-width: 480px) {
+    .whatsapp-float {
+        width: 70px;
+        height: 70px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 30px;
+    }
+}
+
 /* Scrollbar Styling */
 .chat-body::-webkit-scrollbar {
     width: 6px;
